@@ -7,13 +7,13 @@ SET SaleDate = CONVERT(Date,Saledate)
 
 ALTER TABLE NashvilleHousing
 ADD SaleDateConverted Date;
---Конвертируем формат столбца SaleDate
+--Convert the format of column SaleDate
 UPDATE NashvilleHousing
 SET SaleDateConverted = CONVERT(Date,SaleDate)
 
 SELECT PropertyAddress 
 FROM NashvilleHousing;
---Заполним столбец Address Data
+--Fill in column Address Data
 SELECT a.ParcelID, a.PropertyAddress, b.ParcelID, b.PropertyAddress,ISNULL(a.PropertyAddress,b.PropertyAddress)
 FROM NashvilleHousing a
 JOIN NashvilleHousing b
@@ -28,7 +28,7 @@ JOIN NashvilleHousing b
 ON a.ParcelID = b.ParcelID
 AND a.[UniqueID ] <> b.[UniqueID ]
 WHERE a.PropertyAddress IS NULL;
---Разобьем столбец Адрес на 3 столбца (Адрес, город, населенный пункт)
+--Divide column Adress on 3 ones (address, city, state)
 SELECT SUBSTRING(
 PropertyAddress, 1, CHARINDEX(',', PropertyAddress)-1) AS Address,
 SUBSTRING(
@@ -62,7 +62,7 @@ ADD OwnerSplitState Nvarchar(255);
 UPDATE NashvilleHousing
 SET OwnerSplitState =  PARSENAME(REPLACE(OwnerAddress,',','.'),1);
 
---Заменим 'Y' и 'N' на 'YES' и 'NO' в столбце SoldAsVacant
+--Replace 'Y' and 'N' with 'YES' and 'NO' in column SoldAsVacant 
 SELECT Distinct(SoldAsVacant), COUNT(SoldAsVacant)
 FROM NashvilleHousing
 GROUP BY SoldAsVacant
@@ -74,7 +74,7 @@ CASE WHEN SoldAsVacant = 'Y' THEN 'YES'
 	 ELSE SoldAsVacant
 	 END
 	 FROM NashvilleHousing
---Удаляем дубликаты
+--Remove duplicates
 WITH RownumCTE AS(
 SELECT *,
 ROW_NUMBER() OVER(
@@ -89,8 +89,7 @@ FROM NashvilleHousing
 )
 SELECT * FROM RownumCTE
 WHERE row_num > 1
-ORDER BY PropertyAddress
---Удаляем неиспользующиеся колонки
+--Remove unused columns
 SELECT * FROM NashvilleHousing
 ALTER TABLE NashvilleHousing
 DROP COLUMN OwnerAddress, TaxDistrict, PropertyAddress
