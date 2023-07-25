@@ -79,197 +79,197 @@
 	exportControl 	"Public"
 	global     	TRUE
 	logical_models 	(list unit_reference_list
-	    (object Class "Клиент"
+	    (object Class "ГЉГ«ГЁГҐГ­ГІ"
 		quid       	"5ADA57FA0162"
 		stereotype 	"Actor")
-	    (object Class "Оператор АЗС"
+	    (object Class "ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 		quid       	"5ADA57FA016A"
 		stereotype 	"Actor")
-	    (object UseCase "Заправка автомобиля вручную"
+	    (object UseCase "Г‡Г ГЇГ°Г ГўГЄГ  Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї ГўГ°ГіГ·Г­ГіГѕ"
 		quid       	"5ADA57FA016E")
-	    (object UseCase "Оплата топлива через приложение"
+	    (object UseCase "ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г·ГҐГ°ГҐГ§ ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ"
 		quid       	"5ADA57FA0178"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"5ADA555E008D"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Выбор способа оплаты"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 			quidu      	"5ADA57FA0158")))
-	    (object UseCase "Выбор способа оплаты"
+	    (object UseCase "Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 		quid       	"5ADA57FA0158"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"5ADA57FA0159"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Заправка автомобиля вручную"
+			supplier   	"Use Case View::Г‡Г ГЇГ°Г ГўГЄГ  Г ГўГІГ®Г¬Г®ГЎГЁГ«Гї ГўГ°ГіГ·Г­ГіГѕ"
 			quidu      	"5ADA57FA016E")
 		    (object Dependency_Relationship
 			quid       	"5ADA57FA015A"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Оплата топлива через приложение"
+			supplier   	"Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г·ГҐГ°ГҐГ§ ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ"
 			quidu      	"5ADA57FA0178")
 		    (object Dependency_Relationship
 			quid       	"5ADA6CEC008D"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Оплата топлива картой"
+			supplier   	"Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  ГЄГ Г°ГІГ®Г©"
 			quidu      	"5ADA6CD60233")
 		    (object Dependency_Relationship
 			quid       	"5ADA6D0C0129"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Оплата топлива наличными средствами"
+			supplier   	"Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г­Г Г«ГЁГ·Г­Г»Г¬ГЁ Г±Г°ГҐГ¤Г±ГІГўГ Г¬ГЁ"
 			quidu      	"5ADA6CFB008D")))
-	    (object UseCase "Изменение ведения учета продаж"
+	    (object UseCase "Г€Г§Г¬ГҐГ­ГҐГ­ГЁГҐ ГўГҐГ¤ГҐГ­ГЁГї ГіГ·ГҐГІГ  ГЇГ°Г®Г¤Г Г¦"
 		quid       	"5ADA57FA017B")
-	    (object UseCase "Измение продаж топлива"
+	    (object UseCase "Г€Г§Г¬ГҐГ­ГЁГҐ ГЇГ°Г®Г¤Г Г¦ ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA57FA0189")
-	    (object UseCase "Оплата топлива картой"
+	    (object UseCase "ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  ГЄГ Г°ГІГ®Г©"
 		quid       	"5ADA6CD60233"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"5ADA555B002F"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Выбор способа оплаты"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 			quidu      	"5ADA57FA0158")))
-	    (object UseCase "Оплата топлива наличными средствами"
+	    (object UseCase "ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г­Г Г«ГЁГ·Г­Г»Г¬ГЁ Г±Г°ГҐГ¤Г±ГІГўГ Г¬ГЁ"
 		quid       	"5ADA6CFB008D"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"5ADA55570242"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Выбор способа оплаты"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 			quidu      	"5ADA57FA0158")))
-	    (object UseCase "Оплата топлива"
+	    (object UseCase "ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA6D8A0271"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"5ADA6D9603D9"
 			stereotype 	"include"
-			supplier   	"Use Case View::Выбор способа оплаты"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 			quidu      	"5ADA57FA0158")))
-	    (object UseCase "Выбор нужного вида топлива"
+	    (object UseCase "Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA6E290243"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"5ADA6E7700EB"
 			stereotype 	"include"
-			supplier   	"Use Case View::Выбор объема нужного вида топлива"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г®ГЎГєГҐГ¬Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA6E68034C")
 		    (object Dependency_Relationship
 			quid       	"5ADA5AE801A6"
 			stereotype 	"extend"
-			supplier   	"Use Case View::Оплата топлива"
+			supplier   	"Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA6D8A0271")))
-	    (object UseCase "Выбор объема нужного вида топлива"
+	    (object UseCase "Г‚Г»ГЎГ®Г° Г®ГЎГєГҐГ¬Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA6E68034C")
-	    (object UseCase "Заказ топлива"
+	    (object UseCase "Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA5E11005E"
 		visible_modules 	(list dependency_list
 		    (object Dependency_Relationship
 			quid       	"5ADA5E2200DB"
 			stereotype 	"include"
-			supplier   	"Use Case View::Выбор нужного вида топлива"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA6E290243")))
 	    (object Association "$UNNAMED$0"
 		quid       	"5ADA57FA015D"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$1"
 			quid       	"5ADA57FA015E"
-			supplier   	"Logical View::Оплата топлива"
+			supplier   	"Logical View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ "
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$2"
 			quid       	"5ADA57FA015F"
-			supplier   	"Use Case View::Клиент"
+			supplier   	"Use Case View::ГЉГ«ГЁГҐГ­ГІ"
 			quidu      	"5ADA57FA0162")
 		    (object Role "$UNNAMED$3"
 			quid       	"5ADA57FA019D"
-			supplier   	"Use Case View::Выбор способа оплаты"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 			quidu      	"5ADA57FA0158")))
 	    (object Association "$UNNAMED$4"
 		quid       	"5ADA57FA0165"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$5"
 			quid       	"5ADA57FA0166"
-			supplier   	"Logical View::Оплата топлива"
+			supplier   	"Logical View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ "
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$6"
 			quid       	"5ADA57FA0167"
-			supplier   	"Use Case View::Оператор АЗС"
+			supplier   	"Use Case View::ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 			quidu      	"5ADA57FA016A")
 		    (object Role "$UNNAMED$7"
 			quid       	"5ADA57FA01A6"
-			supplier   	"Use Case View::Выбор способа оплаты"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 			quidu      	"5ADA57FA0158")))
 	    (object Association "$UNNAMED$8"
 		quid       	"5ADA6D9101D5"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$9"
 			quid       	"5ADA6D920223"
-			supplier   	"Use Case View::Оплата топлива"
+			supplier   	"Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA6D8A0271"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$10"
 			quid       	"5ADA6D920225"
-			supplier   	"Use Case View::Оператор АЗС"
+			supplier   	"Use Case View::ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 			quidu      	"5ADA57FA016A")))
 	    (object Association "$UNNAMED$11"
 		quid       	"5ADA6DA901E5"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$12"
 			quid       	"5ADA6DAA0000"
-			supplier   	"Use Case View::Выбор способа оплаты"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»"
 			quidu      	"5ADA57FA0158"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$13"
 			quid       	"5ADA6DAA0002"
-			supplier   	"Use Case View::Клиент"
+			supplier   	"Use Case View::ГЉГ«ГЁГҐГ­ГІ"
 			quidu      	"5ADA57FA0162")))
 	    (object Association "$UNNAMED$14"
 		quid       	"5ADA6DC103AA"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$15"
 			quid       	"5ADA6DC2034C"
-			supplier   	"Use Case View::Оплата топлива"
+			supplier   	"Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA6D8A0271"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$16"
 			quid       	"5ADA6DC2034E"
-			supplier   	"Use Case View::Клиент"
+			supplier   	"Use Case View::ГЉГ«ГЁГҐГ­ГІ"
 			quidu      	"5ADA57FA0162")))
 	    (object Association "$UNNAMED$17"
 		quid       	"5ADA6E3E006E"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$18"
 			quid       	"5ADA6E3F007D"
-			supplier   	"Use Case View::Выбор нужного вида топлива"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA6E290243"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$19"
 			quid       	"5ADA6E3F007F"
-			supplier   	"Use Case View::Клиент"
+			supplier   	"Use Case View::ГЉГ«ГЁГҐГ­ГІ"
 			quidu      	"5ADA57FA0162")))
 	    (object Association "$UNNAMED$20"
 		quid       	"5ADA6E480177"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$21"
 			quid       	"5ADA6E490010"
-			supplier   	"Use Case View::Выбор нужного вида топлива"
+			supplier   	"Use Case View::Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA6E290243"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$22"
 			quid       	"5ADA6E490012"
-			supplier   	"Use Case View::Оператор АЗС"
+			supplier   	"Use Case View::ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 			quidu      	"5ADA57FA016A")))
 	    (object Association "$UNNAMED$23"
 		quid       	"5ADA5E1B02EE"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$24"
 			quid       	"5ADA5E1C02A0"
-			supplier   	"Use Case View::Заказ топлива"
+			supplier   	"Use Case View::Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA5E11005E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$25"
 			quid       	"5ADA5E1C02A2"
-			supplier   	"Use Case View::Клиент"
+			supplier   	"Use Case View::ГЉГ«ГЁГҐГ­ГІ"
 			quidu      	"5ADA57FA0162")))
 	    (object Class_Category "NewPackage"
 		quid       	"5ADA5FC4033D"
@@ -278,15 +278,15 @@
 		logical_presentations 	(list unit_reference_list))
 	    (object Mechanism @1
 		logical_models 	(list unit_reference_list
-		    (object Object "Оператор АЗС"
+		    (object Object "ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 			quid       	"5ADA55200139"
 			collaborators 	(list link_list
 			    (object Link
 				quid       	"5ADA5A7803BA"
-				supplier   	"Интерфейс"
+				supplier   	"Г€Г­ГІГҐГ°ГґГҐГ©Г±"
 				quidu      	"5ADA55730187"
 				messages   	(list Messages
-				    (object Message "Запуск системы(t0)"
+				    (object Message "Г‡Г ГЇГіГ±ГЄ Г±ГЁГ±ГІГҐГ¬Г»(t0)"
 					quid       	"5ADA5A7803BB"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -295,7 +295,7 @@
 					ordinal    	0
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Выбор нужного вида топлива(t1)"
+				    (object Message "Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ (t1)"
 					quid       	"5ADA5DA8003F"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -304,7 +304,7 @@
 					ordinal    	1
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Оформление заказа(t2)"
+				    (object Message "ГЋГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г (t2)"
 					quid       	"5ADA56D90010"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -313,7 +313,7 @@
 					ordinal    	5
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Команда на бензоколонку(t5)"
+				    (object Message "ГЉГ®Г¬Г Г­Г¤Г  Г­Г  ГЎГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГі(t5)"
 					quid       	"5ADA619D011A"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -322,20 +322,20 @@
 					ordinal    	13
 					quidu      	"000000000000"
 					creation   	FALSE))))
-			class      	"Use Case View::Оператор АЗС"
+			class      	"Use Case View::ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 			quidu      	"5ADA57FA016A"
 			persistence 	"Transient"
 			creationObj 	FALSE
 			multi      	FALSE)
-		    (object Object "Интерфейс"
+		    (object Object "Г€Г­ГІГҐГ°ГґГҐГ©Г±"
 			quid       	"5ADA55730187"
 			collaborators 	(list link_list
 			    (object Link
 				quid       	"5ADA64820157"
-				supplier   	"БД топлива"
+				supplier   	"ГЃГ„ ГІГ®ГЇГ«ГЁГўГ "
 				quidu      	"5ADA558002EE"
 				messages   	(list Messages
-				    (object Message "Запрос на наличие выбранного топлива()"
+				    (object Message "Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГІГ®ГЇГ«ГЁГўГ ()"
 					quid       	"5ADA64820158"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -344,7 +344,7 @@
 					ordinal    	2
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Запись об оформлении заказа()"
+				    (object Message "Г‡Г ГЇГЁГ±Гј Г®ГЎ Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГЁ Г§Г ГЄГ Г§Г ()"
 					quid       	"5ADA5705003F"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -356,15 +356,15 @@
 			persistence 	"Transient"
 			creationObj 	TRUE
 			multi      	FALSE)
-		    (object Object "БД топлива"
+		    (object Object "ГЃГ„ ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA558002EE"
 			collaborators 	(list link_list
 			    (object Link
 				quid       	"5ADA64E301B5"
-				supplier   	"БД топлива"
+				supplier   	"ГЃГ„ ГІГ®ГЇГ«ГЁГўГ "
 				quidu      	"5ADA558002EE"
 				messages   	(list Messages
-				    (object Message "Проверка на наличие топлива()"
+				    (object Message "ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГІГ®ГЇГ«ГЁГўГ ()"
 					quid       	"5ADA64E301B6"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -373,7 +373,7 @@
 					ordinal    	3
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Верификация топлива"
+				    (object Message "Г‚ГҐГ°ГЁГґГЁГЄГ Г¶ГЁГї ГІГ®ГЇГ«ГЁГўГ "
 					quid       	"5ADA6159033C"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -384,10 +384,10 @@
 					creation   	FALSE)))
 			    (object Link
 				quid       	"5ADA563B03D9"
-				supplier   	"Интерфейс"
+				supplier   	"Г€Г­ГІГҐГ°ГґГҐГ©Г±"
 				quidu      	"5ADA55730187"
 				messages   	(list Messages
-				    (object Message "Ответ о наличии топлива()"
+				    (object Message "ГЋГІГўГҐГІ Г® Г­Г Г«ГЁГ·ГЁГЁ ГІГ®ГЇГ«ГЁГўГ ()"
 					quid       	"5ADA563B03DA"
 					frequency  	"Aperiodic"
 					synchronization 	"Return"
@@ -398,10 +398,10 @@
 					creation   	FALSE)))
 			    (object Link
 				quid       	"5ADA5744031D"
-				supplier   	"БД заказа"
+				supplier   	"ГЃГ„ Г§Г ГЄГ Г§Г "
 				quidu      	"5ADA55930223"
 				messages   	(list Messages
-				    (object Message "Передача заказа на оформление(t3)"
+				    (object Message "ГЏГҐГ°ГҐГ¤Г Г·Г  Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ(t3)"
 					quid       	"5ADA5744031E"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -410,7 +410,7 @@
 					ordinal    	7
 					quidu      	"000000000000"
 					creation   	FALSE)
-				    (object Message "Изменение в БД(t4)"
+				    (object Message "Г€Г§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„(t4)"
 					quid       	"5ADA57A703C9"
 					frequency  	"Aperiodic"
 					synchronization 	"Return"
@@ -422,15 +422,15 @@
 			persistence 	"Transient"
 			creationObj 	TRUE
 			multi      	FALSE)
-		    (object Object "БД заказа"
+		    (object Object "ГЃГ„ Г§Г ГЄГ Г§Г "
 			quid       	"5ADA55930223"
 			collaborators 	(list link_list
 			    (object Link
 				quid       	"5ADA57710020"
-				supplier   	"Интерфейс клиента"
+				supplier   	"Г€Г­ГІГҐГ°ГґГҐГ©Г± ГЄГ«ГЁГҐГ­ГІГ "
 				quidu      	"5ADA5D5102DF"
 				messages   	(list Messages
-				    (object Message "Оформленный заказ()"
+				    (object Message "ГЋГґГ®Г°Г¬Г«ГҐГ­Г­Г»Г© Г§Г ГЄГ Г§()"
 					quid       	"5ADA57710021"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -442,19 +442,19 @@
 			persistence 	"Transient"
 			creationObj 	TRUE
 			multi      	FALSE)
-		    (object Object "Интерфейс клиента"
+		    (object Object "Г€Г­ГІГҐГ°ГґГҐГ©Г± ГЄГ«ГЁГҐГ­ГІГ "
 			quid       	"5ADA5D5102DF"
 			collaborators 	(list link_list
 			    (object Link
 				quid       	"5ADA57D70168"
-				supplier   	"Оператор АЗС"
+				supplier   	"ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 				quidu      	"5ADA55200139")
 			    (object Link
 				quid       	"5ADA612C02CF"
-				supplier   	"Интерфейс клиента"
+				supplier   	"Г€Г­ГІГҐГ°ГґГҐГ©Г± ГЄГ«ГЁГҐГ­ГІГ "
 				quidu      	"5ADA5D5102DF"
 				messages   	(list Messages
-				    (object Message "Подтверждение заказа"
+				    (object Message "ГЏГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 					quid       	"5ADA612C02D0"
 					frequency  	"Aperiodic"
 					synchronization 	"Simple"
@@ -465,10 +465,10 @@
 					creation   	FALSE)))
 			    (object Link
 				quid       	"5ADA61DD00DB"
-				supplier   	"Интерфейс"
+				supplier   	"Г€Г­ГІГҐГ°ГґГҐГ©Г±"
 				quidu      	"5ADA55730187"
 				messages   	(list Messages
-				    (object Message "Заказ()"
+				    (object Message "Г‡Г ГЄГ Г§()"
 					quid       	"5ADA57D70169"
 					frequency  	"Aperiodic"
 					synchronization 	"Return"
@@ -489,14 +489,14 @@
 		    quid       	"5ADA580400BD")
 		(object SynchronizationState "$UNNAMED$28"
 		    quid       	"5ADA580400EA")
-		(object Decision "Решение клиента"
+		(object Decision "ГђГҐГёГҐГ­ГЁГҐ ГЄГ«ГЁГҐГ­ГІГ "
 		    quid       	"5ADA5804008F")
 		(object State "$UNNAMED$29"
 		    quid       	"5ADA58040096"
 		    type       	"EndState")
-		(object ActivityState "Оплатить заказ выбранным способом"
+		(object ActivityState "ГЋГЇГ«Г ГІГЁГІГј Г§Г ГЄГ Г§ ГўГ»ГЎГ°Г Г­Г­Г»Г¬ Г±ГЇГ®Г±Г®ГЎГ®Г¬"
 		    quid       	"5ADA580400D7")
-		(object ActivityState "Получение нужного вида топлива"
+		(object ActivityState "ГЏГ®Г«ГіГ·ГҐГ­ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA580400F8")
 		(object State "$UNNAMED$30"
 		    quid       	"5ADA580400FF"
@@ -504,42 +504,42 @@
 		(object State "$UNNAMED$31"
 		    quid       	"5ADA5804009F"
 		    type       	"StartState")
-		(object ActivityState "Ввод данных по запросу клиента"
+		(object ActivityState "Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ ГЇГ® Г§Г ГЇГ°Г®Г±Гі ГЄГ«ГЁГҐГ­ГІГ "
 		    quid       	"5ADA580400A6")
-		(object ActivityState "Запрос на наличие нужного вида топлива"
+		(object ActivityState "Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA580400AD")
-		(object ActivityState "Сообщение информации о нужном виде топлива"
+		(object ActivityState "Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г® Г­ГіГ¦Г­Г®Г¬ ГўГЁГ¤ГҐ ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA5804010D")
-		(object ActivityState "Ввод данных о нужном объеме топлива"
+		(object ActivityState "Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ Г® Г­ГіГ¦Г­Г®Г¬ Г®ГЎГєГҐГ¬ГҐ ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA580400CB")
-		(object ActivityState "Оформить оплату по выбранному способу"
+		(object ActivityState "ГЋГґГ®Г°Г¬ГЁГІГј Г®ГЇГ«Г ГІГі ГЇГ® ГўГ»ГЎГ°Г Г­Г­Г®Г¬Гі Г±ГЇГ®Г±Г®ГЎГі"
 		    quid       	"5ADA580400C4")
-		(object ActivityState "Зафиксировать данные об оплате"
+		(object ActivityState "Г‡Г ГґГЁГЄГ±ГЁГ°Г®ГўГ ГІГј Г¤Г Г­Г­Г»ГҐ Г®ГЎ Г®ГЇГ«Г ГІГҐ"
 		    quid       	"5ADA580400E3")
-		(object ActivityState "Печать чека"
+		(object ActivityState "ГЏГҐГ·Г ГІГј Г·ГҐГЄГ "
 		    quid       	"5ADA580400F1")
-		(object ActivityState "Ответ на запрос"
+		(object ActivityState "ГЋГІГўГҐГІ Г­Г  Г§Г ГЇГ°Г®Г±"
 		    quid       	"5ADA58040106")
-		(object ActivityState "Разрешить произвести оплату"
+		(object ActivityState "ГђГ Г§Г°ГҐГёГЁГІГј ГЇГ°Г®ГЁГ§ГўГҐГ±ГІГЁ Г®ГЇГ«Г ГІГі"
 		    quid       	"5ADA580400B6")
 		(object ActivityState "NewActivity"
 		    quid       	"5ADA6A19036B"))
 	    partitions 	(list Partitions
-		(object Partition "Клиент"
+		(object Partition "ГЉГ«ГЁГҐГ­ГІ"
 		    quid       	"5ADA5804008D"
-		    class      	"Use Case View::Клиент"
+		    class      	"Use Case View::ГЉГ«ГЁГҐГ­ГІ"
 		    quidu      	"5ADA57FA0162"
 		    persistence 	"Transient"
 		    creationObj 	FALSE
 		    multi      	FALSE)
-		(object Partition "Оператор АЗС"
+		(object Partition "ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 		    quid       	"5ADA5804009D"
-		    class      	"Use Case View::Оператор АЗС"
+		    class      	"Use Case View::ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘"
 		    quidu      	"5ADA57FA016A"
 		    persistence 	"Transient"
 		    creationObj 	FALSE
 		    multi      	FALSE)
-		(object Partition "Система"
+		(object Partition "Г‘ГЁГ±ГІГҐГ¬Г "
 		    quid       	"5ADA580400B4"
 		    persistence 	"Transient"
 		    creationObj 	FALSE
@@ -551,22 +551,22 @@
 		    label      	""
 		    supplier   	"$UNNAMED$29"
 		    supplier_quidu 	"5ADA58040096"
-		    client     	"Use Case View::State/Activity Model2::Решение клиента"
+		    client     	"Use Case View::State/Activity Model2::ГђГҐГёГҐГ­ГЁГҐ ГЄГ«ГЁГҐГ­ГІГ "
 		    client_quidu 	"5ADA5804008F"
-		    condition  	"Не устраивает"
+		    condition  	"ГЌГҐ ГіГ±ГІГ°Г ГЁГўГ ГҐГІ"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA58040094"))
 		(object State_Transition
 		    quid       	"5ADA580400FA"
 		    supplier   	"$UNNAMED$30"
 		    supplier_quidu 	"5ADA580400FF"
-		    client     	"Use Case View::State/Activity Model2::Получение нужного вида топлива"
+		    client     	"Use Case View::State/Activity Model2::ГЏГ®Г«ГіГ·ГҐГ­ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA580400F8"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400FD"))
 		(object State_Transition
 		    quid       	"5ADA580400A1"
-		    supplier   	"Use Case View::State/Activity Model2::Ввод данных по запросу клиента"
+		    supplier   	"Use Case View::State/Activity Model2::Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ ГЇГ® Г§Г ГЇГ°Г®Г±Гі ГЄГ«ГЁГҐГ­ГІГ "
 		    supplier_quidu 	"5ADA580400A6"
 		    client     	"$UNNAMED$31"
 		    client_quidu 	"5ADA5804009F"
@@ -574,51 +574,51 @@
 			quid       	"5ADA580400A4"))
 		(object State_Transition
 		    quid       	"5ADA580400A8"
-		    supplier   	"Use Case View::State/Activity Model2::Запрос на наличие нужного вида топлива"
+		    supplier   	"Use Case View::State/Activity Model2::Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA580400AD"
-		    client     	"Use Case View::State/Activity Model2::Ввод данных по запросу клиента"
+		    client     	"Use Case View::State/Activity Model2::Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ ГЇГ® Г§Г ГЇГ°Г®Г±Гі ГЄГ«ГЁГҐГ­ГІГ "
 		    client_quidu 	"5ADA580400A6"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400AB"))
 		(object State_Transition
 		    quid       	"5ADA58040098"
-		    supplier   	"Use Case View::State/Activity Model2::Решение клиента"
+		    supplier   	"Use Case View::State/Activity Model2::ГђГҐГёГҐГ­ГЁГҐ ГЄГ«ГЁГҐГ­ГІГ "
 		    supplier_quidu 	"5ADA5804008F"
-		    client     	"Use Case View::State/Activity Model2::Сообщение информации о нужном виде топлива"
+		    client     	"Use Case View::State/Activity Model2::Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г® Г­ГіГ¦Г­Г®Г¬ ГўГЁГ¤ГҐ ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5804010D"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5804009B"))
 		(object State_Transition
 		    quid       	"5ADA580400CD"
 		    label      	""
-		    supplier   	"Use Case View::State/Activity Model2::Ввод данных о нужном объеме топлива"
+		    supplier   	"Use Case View::State/Activity Model2::Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ Г® Г­ГіГ¦Г­Г®Г¬ Г®ГЎГєГҐГ¬ГҐ ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA580400CB"
-		    client     	"Use Case View::State/Activity Model2::Решение клиента"
+		    client     	"Use Case View::State/Activity Model2::ГђГҐГёГҐГ­ГЁГҐ ГЄГ«ГЁГҐГ­ГІГ "
 		    client_quidu 	"5ADA5804008F"
-		    condition  	"Устраивает"
+		    condition  	"Г“Г±ГІГ°Г ГЁГўГ ГҐГІ"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400D0"))
 		(object State_Transition
 		    quid       	"5ADA580400D2"
-		    supplier   	"Use Case View::State/Activity Model2::Оплатить заказ выбранным способом"
+		    supplier   	"Use Case View::State/Activity Model2::ГЋГЇГ«Г ГІГЁГІГј Г§Г ГЄГ Г§ ГўГ»ГЎГ°Г Г­Г­Г»Г¬ Г±ГЇГ®Г±Г®ГЎГ®Г¬"
 		    supplier_quidu 	"5ADA580400D7"
-		    client     	"Use Case View::State/Activity Model2::Ввод данных о нужном объеме топлива"
+		    client     	"Use Case View::State/Activity Model2::Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ Г® Г­ГіГ¦Г­Г®Г¬ Г®ГЎГєГҐГ¬ГҐ ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA580400CB"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400D5"))
 		(object State_Transition
 		    quid       	"5ADA580400C6"
-		    supplier   	"Use Case View::State/Activity Model2::Оформить оплату по выбранному способу"
+		    supplier   	"Use Case View::State/Activity Model2::ГЋГґГ®Г°Г¬ГЁГІГј Г®ГЇГ«Г ГІГі ГЇГ® ГўГ»ГЎГ°Г Г­Г­Г®Г¬Гі Г±ГЇГ®Г±Г®ГЎГі"
 		    supplier_quidu 	"5ADA580400C4"
-		    client     	"Use Case View::State/Activity Model2::Ввод данных о нужном объеме топлива"
+		    client     	"Use Case View::State/Activity Model2::Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ Г® Г­ГіГ¦Г­Г®Г¬ Г®ГЎГєГҐГ¬ГҐ ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA580400CB"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400C9"))
 		(object State_Transition
 		    quid       	"5ADA580400D9"
-		    supplier   	"Use Case View::State/Activity Model2::Оформить оплату по выбранному способу"
+		    supplier   	"Use Case View::State/Activity Model2::ГЋГґГ®Г°Г¬ГЁГІГј Г®ГЇГ«Г ГІГі ГЇГ® ГўГ»ГЎГ°Г Г­Г­Г®Г¬Гі Г±ГЇГ®Г±Г®ГЎГі"
 		    supplier_quidu 	"5ADA580400C4"
-		    client     	"Use Case View::State/Activity Model2::Оплатить заказ выбранным способом"
+		    client     	"Use Case View::State/Activity Model2::ГЋГЇГ«Г ГІГЁГІГј Г§Г ГЄГ Г§ ГўГ»ГЎГ°Г Г­Г­Г»Г¬ Г±ГЇГ®Г±Г®ГЎГ®Г¬"
 		    client_quidu 	"5ADA580400D7"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400DC"))
@@ -626,13 +626,13 @@
 		    quid       	"5ADA580400BF"
 		    supplier   	"$UNNAMED$27"
 		    supplier_quidu 	"5ADA580400BD"
-		    client     	"Use Case View::State/Activity Model2::Оформить оплату по выбранному способу"
+		    client     	"Use Case View::State/Activity Model2::ГЋГґГ®Г°Г¬ГЁГІГј Г®ГЇГ«Г ГІГі ГЇГ® ГўГ»ГЎГ°Г Г­Г­Г®Г¬Гі Г±ГЇГ®Г±Г®ГЎГі"
 		    client_quidu 	"5ADA580400C4"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400C2"))
 		(object State_Transition
 		    quid       	"5ADA580400DE"
-		    supplier   	"Use Case View::State/Activity Model2::Зафиксировать данные об оплате"
+		    supplier   	"Use Case View::State/Activity Model2::Г‡Г ГґГЁГЄГ±ГЁГ°Г®ГўГ ГІГј Г¤Г Г­Г­Г»ГҐ Г®ГЎ Г®ГЇГ«Г ГІГҐ"
 		    supplier_quidu 	"5ADA580400E3"
 		    client     	"$UNNAMED$27"
 		    client_quidu 	"5ADA580400BD"
@@ -642,13 +642,13 @@
 		    quid       	"5ADA580400E5"
 		    supplier   	"$UNNAMED$28"
 		    supplier_quidu 	"5ADA580400EA"
-		    client     	"Use Case View::State/Activity Model2::Зафиксировать данные об оплате"
+		    client     	"Use Case View::State/Activity Model2::Г‡Г ГґГЁГЄГ±ГЁГ°Г®ГўГ ГІГј Г¤Г Г­Г­Г»ГҐ Г®ГЎ Г®ГЇГ«Г ГІГҐ"
 		    client_quidu 	"5ADA580400E3"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400E8"))
 		(object State_Transition
 		    quid       	"5ADA580400EC"
-		    supplier   	"Use Case View::State/Activity Model2::Печать чека"
+		    supplier   	"Use Case View::State/Activity Model2::ГЏГҐГ·Г ГІГј Г·ГҐГЄГ "
 		    supplier_quidu 	"5ADA580400F1"
 		    client     	"$UNNAMED$28"
 		    client_quidu 	"5ADA580400EA"
@@ -656,31 +656,31 @@
 			quid       	"5ADA580400EF"))
 		(object State_Transition
 		    quid       	"5ADA580400F3"
-		    supplier   	"Use Case View::State/Activity Model2::Получение нужного вида топлива"
+		    supplier   	"Use Case View::State/Activity Model2::ГЏГ®Г«ГіГ·ГҐГ­ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA580400F8"
-		    client     	"Use Case View::State/Activity Model2::Печать чека"
+		    client     	"Use Case View::State/Activity Model2::ГЏГҐГ·Г ГІГј Г·ГҐГЄГ "
 		    client_quidu 	"5ADA580400F1"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400F6"))
 		(object State_Transition
 		    quid       	"5ADA580400AF"
-		    supplier   	"Use Case View::State/Activity Model2::Ответ на запрос"
+		    supplier   	"Use Case View::State/Activity Model2::ГЋГІГўГҐГІ Г­Г  Г§Г ГЇГ°Г®Г±"
 		    supplier_quidu 	"5ADA58040106"
-		    client     	"Use Case View::State/Activity Model2::Запрос на наличие нужного вида топлива"
+		    client     	"Use Case View::State/Activity Model2::Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA580400AD"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA580400B2"))
 		(object State_Transition
 		    quid       	"5ADA58040108"
-		    supplier   	"Use Case View::State/Activity Model2::Сообщение информации о нужном виде топлива"
+		    supplier   	"Use Case View::State/Activity Model2::Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г® Г­ГіГ¦Г­Г®Г¬ ГўГЁГ¤ГҐ ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA5804010D"
-		    client     	"Use Case View::State/Activity Model2::Ответ на запрос"
+		    client     	"Use Case View::State/Activity Model2::ГЋГІГўГҐГІ Г­Г  Г§Г ГЇГ°Г®Г±"
 		    client_quidu 	"5ADA58040106"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5804010B"))
 		(object State_Transition
 		    quid       	"5ADA580400B8"
-		    supplier   	"Use Case View::State/Activity Model2::Разрешить произвести оплату"
+		    supplier   	"Use Case View::State/Activity Model2::ГђГ Г§Г°ГҐГёГЁГІГј ГЇГ°Г®ГЁГ§ГўГҐГ±ГІГЁ Г®ГЇГ«Г ГІГі"
 		    supplier_quidu 	"5ADA580400B6"
 		    client     	"$UNNAMED$27"
 		    client_quidu 	"5ADA580400BD"
@@ -690,7 +690,7 @@
 		    quid       	"5ADA58040101"
 		    supplier   	"$UNNAMED$28"
 		    supplier_quidu 	"5ADA580400EA"
-		    client     	"Use Case View::State/Activity Model2::Разрешить произвести оплату"
+		    client     	"Use Case View::State/Activity Model2::ГђГ Г§Г°ГҐГёГЁГІГј ГЇГ°Г®ГЁГ§ГўГҐГ±ГІГЁ Г®ГЇГ«Г ГІГі"
 		    client_quidu 	"5ADA580400B6"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA58040104")))
@@ -705,11 +705,11 @@
 		    origin_x   	0
 		    origin_y   	0
 		    items      	(list diagram_item_list
-			(object Swimlane "Клиент" @2
+			(object Swimlane "ГЉГ«ГЁГҐГ­ГІ" @2
 			    line_color 	3342489
 			    quidu      	"5ADA5804008D"
 			    width      	1574)
-			(object DecisionView "Решение клиента" @3
+			(object DecisionView "ГђГҐГёГҐГ­ГЁГҐ ГЄГ«ГЁГҐГ­ГІГ " @3
 			    Parent_View 	@2
 			    location   	(401, 842)
 			    font       	(object Font
@@ -739,7 +739,7 @@
 				nlines     	2
 				max_width  	300
 				justify    	1
-				label      	"Решение клиента"
+				label      	"ГђГҐГёГҐГ­ГЁГҐ ГЄГ«ГЁГҐГ­ГІГ "
 				pctDist    	-1.153703
 				height     	21
 				orientation 	1)
@@ -783,7 +783,7 @@
 				nlines     	1
 				max_width  	640
 				justify    	0
-				label      	"[ Не устраивает ]"
+				label      	"[ ГЌГҐ ГіГ±ГІГ°Г ГЁГўГ ГҐГІ ]"
 				pctDist    	0.423225
 				height     	4
 				orientation 	0)
@@ -797,7 +797,7 @@
 				(389, 1121))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Оплатить заказ выбранным способом" @8
+			(object ActivityStateView "ГЋГЇГ«Г ГІГЁГІГј Г§Г ГЄГ Г§ ГўГ»ГЎГ°Г Г­Г­Г»Г¬ Г±ГЇГ®Г±Г®ГЎГ®Г¬" @8
 			    Parent_View 	@2
 			    location   	(576, 1403)
 			    font       	(object Font
@@ -818,7 +818,7 @@
 				nlines     	2
 				max_width  	552
 				justify    	0
-				label      	"Оплатить заказ выбранным способом")
+				label      	"ГЋГЇГ«Г ГІГЁГІГј Г§Г ГЄГ Г§ ГўГ»ГЎГ°Г Г­Г­Г»Г¬ Г±ГЇГ®Г±Г®ГЎГ®Г¬")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -827,7 +827,7 @@
 			    height     	118
 			    annotation 	1
 			    autoResize 	TRUE)
-			(object ActivityStateView "Получение нужного вида топлива" @9
+			(object ActivityStateView "ГЏГ®Г«ГіГ·ГҐГ­ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @9
 			    Parent_View 	@2
 			    location   	(690, 1997)
 			    font       	(object Font
@@ -848,7 +848,7 @@
 				nlines     	2
 				max_width  	386
 				justify    	0
-				label      	"Получение нужного вида топлива")
+				label      	"ГЏГ®Г«ГіГ·ГҐГ­ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -875,7 +875,7 @@
 				(677, 2176))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object Swimlane "Оператор АЗС" @12
+			(object Swimlane "ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘" @12
 			    location   	(1574, 0)
 			    line_color 	3342489
 			    quidu      	"5ADA5804009D"
@@ -887,7 +887,7 @@
 			    line_color 	3342489
 			    quidu      	"5ADA5804009F"
 			    autoResize 	TRUE)
-			(object ActivityStateView "Ввод данных по запросу клиента" @14
+			(object ActivityStateView "Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ ГЇГ® Г§Г ГЇГ°Г®Г±Гі ГЄГ«ГЁГҐГ­ГІГ " @14
 			    Parent_View 	@12
 			    location   	(1948, 247)
 			    font       	(object Font
@@ -908,7 +908,7 @@
 				nlines     	2
 				max_width  	344
 				justify    	0
-				label      	"Ввод данных по запросу клиента")
+				label      	"Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ ГЇГ® Г§Г ГЇГ°Г®Г±Гі ГЄГ«ГЁГҐГ­ГІГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -928,7 +928,7 @@
 				(1948, 167))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Запрос на наличие нужного вида топлива" @16
+			(object ActivityStateView "Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @16
 			    Parent_View 	@12
 			    location   	(1944, 493)
 			    font       	(object Font
@@ -949,7 +949,7 @@
 				nlines     	2
 				max_width  	424
 				justify    	0
-				label      	"Запрос на наличие нужного вида топлива")
+				label      	"Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -969,7 +969,7 @@
 				(1944, 438))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Сообщение информации о нужном виде топлива" @18
+			(object ActivityStateView "Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г® Г­ГіГ¦Г­Г®Г¬ ГўГЁГ¤ГҐ ГІГ®ГЇГ«ГЁГўГ " @18
 			    Parent_View 	@12
 			    location   	(1996, 778)
 			    font       	(object Font
@@ -990,7 +990,7 @@
 				nlines     	2
 				max_width  	548
 				justify    	0
-				label      	"Сообщение информации о нужном виде топлива")
+				label      	"Г‘Г®Г®ГЎГ№ГҐГ­ГЁГҐ ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГЁ Г® Г­ГіГ¦Г­Г®Г¬ ГўГЁГ¤ГҐ ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -1010,7 +1010,7 @@
 				(476, 842))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Ввод данных о нужном объеме топлива" @20
+			(object ActivityStateView "Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ Г® Г­ГіГ¦Г­Г®Г¬ Г®ГЎГєГҐГ¬ГҐ ГІГ®ГЇГ«ГЁГўГ " @20
 			    Parent_View 	@12
 			    location   	(1982, 1104)
 			    font       	(object Font
@@ -1031,7 +1031,7 @@
 				nlines     	2
 				max_width  	452
 				justify    	0
-				label      	"Ввод данных о нужном объеме топлива")
+				label      	"Г‚ГўГ®Г¤ Г¤Г Г­Г­Г»Гµ Г® Г­ГіГ¦Г­Г®Г¬ Г®ГЎГєГҐГ¬ГҐ ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -1068,7 +1068,7 @@
 				nlines     	1
 				max_width  	500
 				justify    	0
-				label      	"[ Устраивает ]"
+				label      	"[ Г“Г±ГІГ°Г ГЁГўГ ГҐГІ ]"
 				pctDist    	0.500000
 				height     	45
 				orientation 	0)
@@ -1093,7 +1093,7 @@
 				(829, 1349))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Оформить оплату по выбранному способу" @24
+			(object ActivityStateView "ГЋГґГ®Г°Г¬ГЁГІГј Г®ГЇГ«Г ГІГі ГЇГ® ГўГ»ГЎГ°Г Г­Г­Г®Г¬Гі Г±ГЇГ®Г±Г®ГЎГі" @24
 			    Parent_View 	@12
 			    location   	(1927, 1419)
 			    font       	(object Font
@@ -1114,7 +1114,7 @@
 				nlines     	2
 				max_width  	414
 				justify    	0
-				label      	"Оформить оплату по выбранному способу")
+				label      	"ГЋГґГ®Г°Г¬ГЁГІГј Г®ГЇГ«Г ГІГі ГЇГ® ГўГ»ГЎГ°Г Г­Г­Г®Г¬Гі Г±ГЇГ®Г±Г®ГЎГі")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -1134,7 +1134,7 @@
 				(1699, 1416))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Печать чека" @26
+			(object ActivityStateView "ГЏГҐГ·Г ГІГј Г·ГҐГЄГ " @26
 			    Parent_View 	@12
 			    location   	(1933, 2011)
 			    font       	(object Font
@@ -1155,7 +1155,7 @@
 				nlines     	2
 				max_width  	267
 				justify    	0
-				label      	"Печать чека")
+				label      	"ГЏГҐГ·Г ГІГј Г·ГҐГЄГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -1174,12 +1174,12 @@
 				(907, 1999))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object Swimlane "Система" @28
+			(object Swimlane "Г‘ГЁГ±ГІГҐГ¬Г " @28
 			    location   	(2384, 0)
 			    line_color 	3342489
 			    quidu      	"5ADA580400B4"
 			    width      	1514)
-			(object ActivityStateView "Ответ на запрос" @29
+			(object ActivityStateView "ГЋГІГўГҐГІ Г­Г  Г§Г ГЇГ°Г®Г±" @29
 			    Parent_View 	@28
 			    location   	(3138, 531)
 			    font       	(object Font
@@ -1200,7 +1200,7 @@
 				nlines     	2
 				max_width  	267
 				justify    	0
-				label      	"Ответ на запрос")
+				label      	"ГЋГІГўГҐГІ Г­Г  Г§Г ГЇГ°Г®Г±")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -1230,7 +1230,7 @@
 				(2243, 724))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object ActivityStateView "Разрешить произвести оплату" @32
+			(object ActivityStateView "ГђГ Г§Г°ГҐГёГЁГІГј ГЇГ°Г®ГЁГ§ГўГҐГ±ГІГЁ Г®ГЇГ«Г ГІГі" @32
 			    Parent_View 	@28
 			    location   	(2954, 1703)
 			    font       	(object Font
@@ -1251,7 +1251,7 @@
 				nlines     	2
 				max_width  	370
 				justify    	0
-				label      	"Разрешить произвести оплату")
+				label      	"ГђГ Г§Г°ГҐГёГЁГІГј ГЇГ°Г®ГЁГ§ГўГҐГ±ГІГЁ Г®ГЇГ«Г ГІГі")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -1444,7 +1444,7 @@
 		origin_x   	500
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object UseCaseView "Use Case View::Оплата топлива через приложение" @44
+		    (object UseCaseView "Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г·ГҐГ°ГҐГ§ ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ" @44
 			location   	(2427, 1193)
 			font       	(object Font
 			    size       	10
@@ -1463,13 +1463,13 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Оплата топлива через приложение")
+			    label      	"ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г·ГҐГ°ГҐГ§ ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГҐ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5ADA57FA0178"
 			height     	118)
-		    (object UseCaseView "Use Case View::Оплата топлива картой" @45
+		    (object UseCaseView "Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  ГЄГ Г°ГІГ®Г©" @45
 			location   	(1790, 1172)
 			font       	(object Font
 			    size       	10
@@ -1488,13 +1488,13 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Оплата топлива картой")
+			    label      	"ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  ГЄГ Г°ГІГ®Г©")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5ADA6CD60233"
 			height     	118)
-		    (object UseCaseView "Use Case View::Оплата топлива наличными средствами" @46
+		    (object UseCaseView "Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г­Г Г«ГЁГ·Г­Г»Г¬ГЁ Г±Г°ГҐГ¤Г±ГІГўГ Г¬ГЁ" @46
 			location   	(1117, 1037)
 			font       	(object Font
 			    size       	10
@@ -1513,13 +1513,13 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Оплата топлива наличными средствами")
+			    label      	"ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ  Г­Г Г«ГЁГ·Г­Г»Г¬ГЁ Г±Г°ГҐГ¤Г±ГІГўГ Г¬ГЁ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5ADA6CFB008D"
 			height     	118)
-		    (object UseCaseView "Use Case View::Выбор способа оплаты" @47
+		    (object UseCaseView "Use Case View::Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»" @47
 			location   	(1287, 603)
 			font       	(object Font
 			    size       	10
@@ -1538,13 +1538,13 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Выбор способа оплаты")
+			    label      	"Г‚Г»ГЎГ®Г° Г±ГЇГ®Г±Г®ГЎГ  Г®ГЇГ«Г ГІГ»")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5ADA57FA0158"
 			height     	118)
-		    (object UseCaseView "Use Case View::Выбор объема нужного вида топлива" @48
+		    (object UseCaseView "Use Case View::Г‚Г»ГЎГ®Г° Г®ГЎГєГҐГ¬Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @48
 			location   	(3672, 997)
 			font       	(object Font
 			    size       	10
@@ -1563,13 +1563,13 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Выбор объема нужного вида топлива")
+			    label      	"Г‚Г»ГЎГ®Г° Г®ГЎГєГҐГ¬Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5ADA6E68034C"
 			height     	118)
-		    (object UseCaseView "Use Case View::Выбор нужного вида топлива" @49
+		    (object UseCaseView "Use Case View::Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @49
 			location   	(3582, 675)
 			font       	(object Font
 			    size       	10
@@ -1588,7 +1588,7 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Выбор нужного вида топлива")
+			    label      	"Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -1635,7 +1635,7 @@
 			    (3625, 838)
 			    (3651, 937))
 			line_style 	0)
-		    (object ClassView "Class" "Use Case View::Оператор АЗС" @52
+		    (object ClassView "Class" "Use Case View::ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘" @52
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1657,7 +1657,7 @@
 			    nlines     	2
 			    max_width  	325
 			    justify    	0
-			    label      	"Оператор АЗС")
+			    label      	"ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘")
 			icon       	"Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -1704,7 +1704,7 @@
 				    (3009, 837)
 				    (2708, 923))
 				line_style 	0)))
-		    (object UseCaseView "Use Case View::Оплата топлива" @56
+		    (object UseCaseView "Use Case View::ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ " @56
 			location   	(2516, 572)
 			font       	(object Font
 			    size       	10
@@ -1723,7 +1723,7 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Оплата топлива")
+			    label      	"ГЋГЇГ«Г ГІГ  ГІГ®ГЇГ«ГЁГўГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -1851,7 +1851,7 @@
 			    (3472, 659)
 			    (2624, 581))
 			line_style 	0)
-		    (object UseCaseView "Use Case View::Заказ топлива" @64
+		    (object UseCaseView "Use Case View::Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ " @64
 			location   	(3240, 381)
 			font       	(object Font
 			    size       	10
@@ -1870,13 +1870,13 @@
 			    nlines     	2
 			    max_width  	630
 			    justify    	0
-			    label      	"Заказ топлива")
+			    label      	"Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
 			quidu      	"5ADA5E11005E"
 			height     	118)
-		    (object ClassView "Class" "Use Case View::Клиент" @65
+		    (object ClassView "Class" "Use Case View::ГЉГ«ГЁГҐГ­ГІ" @65
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1898,7 +1898,7 @@
 			    nlines     	2
 			    max_width  	325
 			    justify    	0
-			    label      	"Клиент")
+			    label      	"ГЉГ«ГЁГҐГ­ГІ")
 			icon       	"Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -2159,7 +2159,7 @@
 		origin_x   	549
 		origin_y   	42
 		items      	(list diagram_item_list
-		    (object InterObjView "Оператор АЗС" @80
+		    (object InterObjView "ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘" @80
 			location   	(450, 259)
 			font       	(object Font
 			    size       	10
@@ -2178,7 +2178,7 @@
 			    nlines     	2
 			    max_width  	360
 			    justify    	0
-			    label      	"Оператор АЗС")
+			    label      	"ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘")
 			icon       	"Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -2211,7 +2211,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	TRUE))
-		    (object InterObjView "Интерфейс" @84
+		    (object InterObjView "Г€Г­ГІГҐГ°ГґГҐГ©Г±" @84
 			location   	(946, 300)
 			font       	(object Font
 			    size       	10
@@ -2231,7 +2231,7 @@
 			    nlines     	2
 			    max_width  	282
 			    justify    	0
-			    label      	"Интерфейс")
+			    label      	"Г€Г­ГІГҐГ°ГґГҐГ©Г±")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -2291,7 +2291,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	FALSE))
-		    (object InterObjView "БД топлива" @92
+		    (object InterObjView "ГЃГ„ ГІГ®ГЇГ«ГЁГўГ " @92
 			location   	(1462, 297)
 			font       	(object Font
 			    size       	10
@@ -2311,7 +2311,7 @@
 			    nlines     	2
 			    max_width  	282
 			    justify    	0
-			    label      	"БД топлива")
+			    label      	"ГЃГ„ ГІГ®ГЇГ«ГЁГўГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -2364,7 +2364,7 @@
 			    height     	90
 			    y_coord    	0
 			    Nested     	TRUE))
-		    (object InterObjView "БД заказа" @99
+		    (object InterObjView "ГЃГ„ Г§Г ГЄГ Г§Г " @99
 			location   	(2037, 293)
 			font       	(object Font
 			    size       	10
@@ -2384,7 +2384,7 @@
 			    nlines     	2
 			    max_width  	282
 			    justify    	0
-			    label      	"БД заказа")
+			    label      	"ГЃГ„ Г§Г ГЄГ Г§Г ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -2409,7 +2409,7 @@
 			    height     	377
 			    y_coord    	287
 			    Nested     	TRUE))
-		    (object InterObjView "Интерфейс клиента" @102
+		    (object InterObjView "Г€Г­ГІГҐГ°ГґГҐГ©Г± ГЄГ«ГЁГҐГ­ГІГ " @102
 			location   	(2500, 292)
 			font       	(object Font
 			    size       	10
@@ -2429,7 +2429,7 @@
 			    nlines     	2
 			    max_width  	283
 			    justify    	0
-			    label      	"Интерфейс клиента")
+			    label      	"Г€Г­ГІГҐГ°ГґГҐГ©Г± ГЄГ«ГЁГҐГ­ГІГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -2473,7 +2473,7 @@
 			location   	(450, 2264)
 			line_color 	3342489
 			fill_color 	13434879)
-		    (object InterMessView "Запуск системы(t0)" @108
+		    (object InterMessView "Г‡Г ГЇГіГ±ГЄ Г±ГЁГ±ГІГҐГ¬Г»(t0)" @108
 			location   	(0, 458)
 			font       	(object Font
 			    size       	10
@@ -2503,7 +2503,7 @@
 			    nlines     	1
 			    max_width  	424
 			    justify    	0
-			    label      	"Запуск системы(t0)"
+			    label      	"Г‡Г ГЇГіГ±ГЄ Г±ГЁГ±ГІГҐГ¬Г»(t0)"
 			    pctDist    	0.490323
 			    height     	32
 			    orientation 	0)
@@ -2515,7 +2515,7 @@
 			origin     	(465, 458)
 			terminus   	(930, 458)
 			ordinal    	0)
-		    (object InterMessView "Выбор нужного вида топлива(t1)" @110
+		    (object InterMessView "Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ (t1)" @110
 			location   	(0, 628)
 			font       	(object Font
 			    size       	10
@@ -2545,7 +2545,7 @@
 			    nlines     	1
 			    max_width  	681
 			    justify    	0
-			    label      	"Выбор нужного вида топлива(t1)"
+			    label      	"Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ (t1)"
 			    pctDist    	0.479570
 			    height     	64
 			    orientation 	0)
@@ -2573,7 +2573,7 @@
 			max_width  	600
 			justify    	1
 			label      	"")
-		    (object InterMessView "Запрос на наличие выбранного топлива()" @113
+		    (object InterMessView "Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГІГ®ГЇГ«ГЁГўГ ()" @113
 			location   	(0, 733)
 			font       	(object Font
 			    size       	10
@@ -2603,7 +2603,7 @@
 			    nlines     	1
 			    max_width  	897
 			    justify    	0
-			    label      	"Запрос на наличие выбранного топлива()"
+			    label      	"Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГІГ®ГЇГ«ГЁГўГ ()"
 			    pctDist    	0.529897
 			    height     	46
 			    orientation 	0)
@@ -2615,7 +2615,7 @@
 			origin     	(961, 733)
 			terminus   	(1446, 733)
 			ordinal    	2)
-		    (object SelfMessView "Проверка на наличие топлива()" @115
+		    (object SelfMessView "ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГІГ®ГЇГ«ГЁГўГ ()" @115
 			location   	(0, 838)
 			font       	(object Font
 			    size       	10
@@ -2645,7 +2645,7 @@
 			    nlines     	1
 			    max_width  	660
 			    justify    	0
-			    label      	"Проверка на наличие топлива()"
+			    label      	"ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГІГ®ГЇГ«ГЁГўГ ()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -2657,7 +2657,7 @@
 			origin     	(1478, 838)
 			terminus   	(1628, 838)
 			ordinal    	3)
-		    (object InterMessView "Ответ о наличии топлива()" @117
+		    (object InterMessView "ГЋГІГўГҐГІ Г® Г­Г Г«ГЁГ·ГЁГЁ ГІГ®ГЇГ«ГЁГўГ ()" @117
 			location   	(0, 968)
 			font       	(object Font
 			    size       	10
@@ -2687,7 +2687,7 @@
 			    nlines     	1
 			    max_width  	585
 			    justify    	0
-			    label      	"Ответ о наличии топлива()"
+			    label      	"ГЋГІГўГҐГІ Г® Г­Г Г«ГЁГ·ГЁГЁ ГІГ®ГЇГ«ГЁГўГ ()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	1)
@@ -2699,7 +2699,7 @@
 			origin     	(1446, 968)
 			terminus   	(962, 968)
 			ordinal    	4)
-		    (object InterMessView "Оформление заказа(t2)" @119
+		    (object InterMessView "ГЋГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г (t2)" @119
 			location   	(0, 1151)
 			font       	(object Font
 			    size       	10
@@ -2729,7 +2729,7 @@
 			    nlines     	1
 			    max_width  	517
 			    justify    	0
-			    label      	"Оформление заказа(t2)"
+			    label      	"ГЋГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г (t2)"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -2741,7 +2741,7 @@
 			origin     	(465, 1151)
 			terminus   	(930, 1151)
 			ordinal    	5)
-		    (object InterMessView "Запись об оформлении заказа()" @121
+		    (object InterMessView "Г‡Г ГЇГЁГ±Гј Г®ГЎ Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГЁ Г§Г ГЄГ Г§Г ()" @121
 			location   	(0, 1256)
 			font       	(object Font
 			    size       	10
@@ -2771,7 +2771,7 @@
 			    nlines     	1
 			    max_width  	674
 			    justify    	0
-			    label      	"Запись об оформлении заказа()"
+			    label      	"Г‡Г ГЇГЁГ±Гј Г®ГЎ Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГЁ Г§Г ГЄГ Г§Г ()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -2783,7 +2783,7 @@
 			origin     	(961, 1256)
 			terminus   	(1446, 1256)
 			ordinal    	6)
-		    (object InterMessView "Передача заказа на оформление(t3)" @123
+		    (object InterMessView "ГЏГҐГ°ГҐГ¤Г Г·Г  Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ(t3)" @123
 			location   	(0, 1361)
 			font       	(object Font
 			    size       	10
@@ -2813,7 +2813,7 @@
 			    nlines     	1
 			    max_width  	774
 			    justify    	0
-			    label      	"Передача заказа на оформление(t3)"
+			    label      	"ГЏГҐГ°ГҐГ¤Г Г·Г  Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ(t3)"
 			    pctDist    	0.500000
 			    height     	40
 			    orientation 	0)
@@ -2825,7 +2825,7 @@
 			origin     	(1477, 1361)
 			terminus   	(2021, 1361)
 			ordinal    	7)
-		    (object InterMessView "Оформленный заказ()" @125
+		    (object InterMessView "ГЋГґГ®Г°Г¬Г«ГҐГ­Г­Г»Г© Г§Г ГЄГ Г§()" @125
 			location   	(0, 1466)
 			font       	(object Font
 			    size       	10
@@ -2855,7 +2855,7 @@
 			    nlines     	1
 			    max_width  	507
 			    justify    	0
-			    label      	"Оформленный заказ()"
+			    label      	"ГЋГґГ®Г°Г¬Г«ГҐГ­Г­Г»Г© Г§Г ГЄГ Г§()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -2867,7 +2867,7 @@
 			origin     	(2052, 1466)
 			terminus   	(2484, 1466)
 			ordinal    	8)
-		    (object InterMessView "Изменение в БД(t4)" @127
+		    (object InterMessView "Г€Г§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„(t4)" @127
 			location   	(0, 1738)
 			font       	(object Font
 			    size       	10
@@ -2897,7 +2897,7 @@
 			    nlines     	1
 			    max_width  	455
 			    justify    	0
-			    label      	"Изменение в БД(t4)"
+			    label      	"Г€Г§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„(t4)"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	1)
@@ -2909,7 +2909,7 @@
 			origin     	(2021, 1738)
 			terminus   	(1478, 1738)
 			ordinal    	10)
-		    (object InterMessView "Заказ()" @129
+		    (object InterMessView "Г‡Г ГЄГ Г§()" @129
 			location   	(0, 2009)
 			font       	(object Font
 			    size       	10
@@ -2939,7 +2939,7 @@
 			    nlines     	1
 			    max_width  	206
 			    justify    	0
-			    label      	"Заказ()"
+			    label      	"Г‡Г ГЄГ Г§()"
 			    pctDist    	0.598714
 			    height     	36
 			    orientation 	1)
@@ -2951,7 +2951,7 @@
 			origin     	(2484, 2009)
 			terminus   	(962, 2009)
 			ordinal    	12)
-		    (object SelfMessView "Подтверждение заказа" @131
+		    (object SelfMessView "ГЏГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г " @131
 			location   	(0, 1608)
 			font       	(object Font
 			    size       	10
@@ -2981,7 +2981,7 @@
 			    nlines     	1
 			    max_width  	524
 			    justify    	0
-			    label      	"Подтверждение заказа"
+			    label      	"ГЏГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -2993,7 +2993,7 @@
 			origin     	(2516, 1608)
 			terminus   	(2666, 1608)
 			ordinal    	9)
-		    (object SelfMessView "Верификация топлива" @133
+		    (object SelfMessView "Г‚ГҐГ°ГЁГґГЁГЄГ Г¶ГЁГї ГІГ®ГЇГ«ГЁГўГ " @133
 			location   	(0, 1868)
 			font       	(object Font
 			    size       	10
@@ -3023,7 +3023,7 @@
 			    nlines     	1
 			    max_width  	504
 			    justify    	0
-			    label      	"Верификация топлива"
+			    label      	"Г‚ГҐГ°ГЁГґГЁГЄГ Г¶ГЁГї ГІГ®ГЇГ«ГЁГўГ "
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3035,7 +3035,7 @@
 			origin     	(1478, 1868)
 			terminus   	(1628, 1868)
 			ordinal    	11)
-		    (object InterMessView "Команда на бензоколонку(t5)" @135
+		    (object InterMessView "ГЉГ®Г¬Г Г­Г¤Г  Г­Г  ГЎГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГі(t5)" @135
 			location   	(0, 2114)
 			font       	(object Font
 			    size       	10
@@ -3065,7 +3065,7 @@
 			    nlines     	1
 			    max_width  	653
 			    justify    	0
-			    label      	"Команда на бензоколонку(t5)"
+			    label      	"ГЉГ®Г¬Г Г­Г¤Г  Г­Г  ГЎГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГі(t5)"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3087,7 +3087,7 @@
 		origin_x   	1206
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ObjectView "Оператор АЗС" @137
+		    (object ObjectView "ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘" @137
 			location   	(301, 1009)
 			font       	(object Font
 			    size       	10
@@ -3106,7 +3106,7 @@
 			    nlines     	2
 			    max_width  	389
 			    justify    	0
-			    label      	"Оператор АЗС")
+			    label      	"ГЋГЇГҐГ°Г ГІГ®Г° ГЂГ‡Г‘")
 			icon       	"Actor"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -3117,7 +3117,7 @@
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Интерфейс" @138
+		    (object ObjectView "Г€Г­ГІГҐГ°ГґГҐГ©Г±" @138
 			location   	(898, 380)
 			font       	(object Font
 			    size       	10
@@ -3136,7 +3136,7 @@
 			    nlines     	2
 			    max_width  	207
 			    justify    	0
-			    label      	"Интерфейс")
+			    label      	"Г€Г­ГІГҐГ°ГґГҐГ©Г±")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -3148,7 +3148,7 @@
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "БД топлива" @139
+		    (object ObjectView "ГЃГ„ ГІГ®ГЇГ«ГЁГўГ " @139
 			location   	(2860, 508)
 			font       	(object Font
 			    size       	10
@@ -3167,7 +3167,7 @@
 			    nlines     	2
 			    max_width  	192
 			    justify    	0
-			    label      	"БД топлива")
+			    label      	"ГЃГ„ ГІГ®ГЇГ«ГЁГўГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -3179,7 +3179,7 @@
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "БД заказа" @140
+		    (object ObjectView "ГЃГ„ Г§Г ГЄГ Г§Г " @140
 			location   	(342, 1713)
 			font       	(object Font
 			    size       	10
@@ -3198,7 +3198,7 @@
 			    nlines     	2
 			    max_width  	162
 			    justify    	0
-			    label      	"БД заказа")
+			    label      	"ГЃГ„ Г§Г ГЄГ Г§Г ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -3209,7 +3209,7 @@
 			subobjects 	0
 			x_offset   	0.000000
 			y_offset   	0.000000)
-		    (object ObjectView "Интерфейс клиента" @141
+		    (object ObjectView "Г€Г­ГІГҐГ°ГґГҐГ©Г± ГЄГ«ГЁГҐГ­ГІГ " @141
 			location   	(2570, 1920)
 			font       	(object Font
 			    size       	10
@@ -3228,7 +3228,7 @@
 			    nlines     	2
 			    max_width  	262
 			    justify    	0
-			    label      	"Интерфейс клиента")
+			    label      	"Г€Г­ГІГҐГ°ГґГҐГ©Г± ГЄГ«ГЁГҐГ­ГІГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			fill_color 	13434879
@@ -3282,7 +3282,7 @@
 			    nlines     	1
 			    max_width  	606
 			    justify    	0
-			    label      	"Проверка на наличие топлива()"
+			    label      	"ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГІГ®ГЇГ«ГЁГўГ ()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3304,7 +3304,7 @@
 			    nlines     	1
 			    max_width  	469
 			    justify    	0
-			    label      	"Верификация топлива"
+			    label      	"Г‚ГҐГ°ГЁГґГЁГЄГ Г¶ГЁГї ГІГ®ГЇГ«ГЁГўГ "
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3357,7 +3357,7 @@
 			    nlines     	1
 			    max_width  	494
 			    justify    	0
-			    label      	"Подтверждение заказа"
+			    label      	"ГЏГ®Г¤ГІГўГҐГ°Г¦Г¤ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3409,7 +3409,7 @@
 			    nlines     	1
 			    max_width  	394
 			    justify    	0
-			    label      	"Запуск системы(t0)"
+			    label      	"Г‡Г ГЇГіГ±ГЄ Г±ГЁГ±ГІГҐГ¬Г»(t0)"
 			    pctDist    	0.637535
 			    height     	300
 			    orientation 	0)
@@ -3431,7 +3431,7 @@
 			    nlines     	1
 			    max_width  	642
 			    justify    	0
-			    label      	"Выбор нужного вида топлива(t1)"
+			    label      	"Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ (t1)"
 			    pctDist    	0.351275
 			    height     	268
 			    orientation 	0)
@@ -3453,7 +3453,7 @@
 			    nlines     	1
 			    max_width  	463
 			    justify    	0
-			    label      	"Оформление заказа(t2)"
+			    label      	"ГЋГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г (t2)"
 			    pctDist    	0.065014
 			    height     	235
 			    orientation 	0)
@@ -3475,7 +3475,7 @@
 			    nlines     	1
 			    max_width  	604
 			    justify    	0
-			    label      	"Команда на бензоколонку(t5)"
+			    label      	"ГЉГ®Г¬Г Г­Г¤Г  Г­Г  ГЎГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГі(t5)"
 			    pctDist    	-0.219884
 			    height     	205
 			    orientation 	0)
@@ -3527,7 +3527,7 @@
 			    nlines     	1
 			    max_width  	788
 			    justify    	0
-			    label      	"Запрос на наличие выбранного топлива()"
+			    label      	"Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГІГ®ГЇГ«ГЁГўГ ()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3549,7 +3549,7 @@
 			    nlines     	1
 			    max_width  	597
 			    justify    	0
-			    label      	"Запись о оформлении заказа()"
+			    label      	"Г‡Г ГЇГЁГ±Гј Г® Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГЁ Г§Г ГЄГ Г§Г ()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3601,7 +3601,7 @@
 			    nlines     	1
 			    max_width  	526
 			    justify    	0
-			    label      	"Ответ о наличии топлива()"
+			    label      	"ГЋГІГўГҐГІ Г® Г­Г Г«ГЁГ·ГЁГЁ ГІГ®ГЇГ«ГЁГўГ ()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3653,7 +3653,7 @@
 			    nlines     	1
 			    max_width  	710
 			    justify    	0
-			    label      	"Передача заказа на оформление(t3)"
+			    label      	"ГЏГҐГ°ГҐГ¤Г Г·Г  Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ(t3)"
 			    pctDist    	-0.018221
 			    height     	225
 			    orientation 	0)
@@ -3695,7 +3695,7 @@
 			    nlines     	1
 			    max_width  	429
 			    justify    	0
-			    label      	"Изменение в БД(t4)"
+			    label      	"Г€Г§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„(t4)"
 			    pctDist    	0.461452
 			    height     	138
 			    orientation 	0)
@@ -3747,7 +3747,7 @@
 			    nlines     	1
 			    max_width  	450
 			    justify    	0
-			    label      	"Оформленный заказ()"
+			    label      	"ГЋГґГ®Г°Г¬Г«ГҐГ­Г­Г»Г© Г§Г ГЄГ Г§()"
 			    pctDist    	0.500000
 			    height     	45
 			    orientation 	0)
@@ -3809,7 +3809,7 @@
 			    nlines     	1
 			    max_width  	194
 			    justify    	0
-			    label      	"Заказ()"
+			    label      	"Г‡Г ГЄГ Г§()"
 			    pctDist    	0.245433
 			    height     	74
 			    orientation 	0)
@@ -3827,206 +3827,206 @@
 	subsystem  	"Component View"
 	quidu      	"5ADA54D0036E"
 	logical_models 	(list unit_reference_list
-	    (object Class "Количество нужного вида топлива"
+	    (object Class "ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA589B00D0"
 		stereotype 	"entity"
 		operations 	(list Operations
-		    (object Operation "Предоставить нужное количества определенного вида топлива"
+		    (object Operation "ГЏГ°ГҐГ¤Г®Г±ГІГ ГўГЁГІГј Г­ГіГ¦Г­Г®ГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ  Г®ГЇГ°ГҐГ¤ГҐГ«ГҐГ­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA589B00D1"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0))
 		class_attributes 	(list class_attribute_list
-		    (object ClassAttribute "Список количества нужного вида топлива"
+		    (object ClassAttribute "Г‘ГЇГЁГ±Г®ГЄ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA589B00D2"
 			type       	"Integer"
 			exportControl 	"Public")))
-	    (object Class "Наличие нужного вида топлива"
+	    (object Class "ГЌГ Г«ГЁГ·ГЁГҐ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA589B00DA"
 		stereotype 	"entity"
 		operations 	(list Operations
-		    (object Operation "Предоставить список"
+		    (object Operation "ГЏГ°ГҐГ¤Г®Г±ГІГ ГўГЁГІГј Г±ГЇГЁГ±Г®ГЄ"
 			quid       	"5ADA589B00DB"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0))
 		class_attributes 	(list class_attribute_list
-		    (object ClassAttribute "Список"
+		    (object ClassAttribute "Г‘ГЇГЁГ±Г®ГЄ"
 			quid       	"5ADA589B00DC"
 			type       	"Integer"
 			exportControl 	"Public")))
-	    (object Class "Терминал"
+	    (object Class "Г’ГҐГ°Г¬ГЁГ­Г Г«"
 		quid       	"5ADA66530261"
 		stereotype 	"boundary"
 		operations 	(list Operations
-		    (object Operation "Прочитать идентификатор карты"
+		    (object Operation "ГЏГ°Г®Г·ГЁГІГ ГІГј ГЁГ¤ГҐГ­ГІГЁГґГЁГЄГ ГІГ®Г° ГЄГ Г°ГІГ»"
 			quid       	"5ADA6694003E"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Прочитать пин-код карты"
+		    (object Operation "ГЏГ°Г®Г·ГЁГІГ ГІГј ГЇГЁГ­-ГЄГ®Г¤ ГЄГ Г°ГІГ»"
 			quid       	"5ADA66CD00BB"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Обработать карту с помощью технологии NFC"
+		    (object Operation "ГЋГЎГ°Г ГЎГ®ГІГ ГІГј ГЄГ Г°ГІГі Г± ГЇГ®Г¬Г®Г№ГјГѕ ГІГҐГµГ­Г®Г«Г®ГЈГЁГЁ NFC"
 			quid       	"5ADA66E20128"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)))
-	    (object Class "Контроллер кассы"
+	    (object Class "ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 		quid       	"5ADA67A6036B"
 		stereotype 	"control"
 		superclasses 	(list inheritance_relationship_list
 		    (object Inheritance_Relationship
 			quid       	"5ADA77320399"
-			supplier   	"Logical View::Заказ топлива"
+			supplier   	"Logical View::Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA74BA01D4")))
-	    (object Class "Клавиатура терминала"
+	    (object Class "ГЉГ«Г ГўГЁГ ГІГіГ°Г  ГІГҐГ°Г¬ГЁГ­Г Г«Г "
 		quid       	"5ADA7101032C"
 		stereotype 	"boundary"
 		operations 	(list Operations
-		    (object Operation "Ввести пин-код"
+		    (object Operation "Г‚ГўГҐГ±ГІГЁ ГЇГЁГ­-ГЄГ®Г¤"
 			quid       	"5ADA716902BF"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Отменить операцию ввода пин-кода"
+		    (object Operation "ГЋГІГ¬ГҐГ­ГЁГІГј Г®ГЇГҐГ°Г Г¶ГЁГѕ ГўГўГ®Г¤Г  ГЇГЁГ­-ГЄГ®Г¤Г "
 			quid       	"5ADA717A0222"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)))
-	    (object Class "Устройство печати чека"
+	    (object Class "Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЇГҐГ·Г ГІГЁ Г·ГҐГЄГ "
 		quid       	"5ADA72340109"
 		stereotype 	"boundary"
 		operations 	(list Operations
-		    (object Operation "Распечатать чек об успешной оплате"
+		    (object Operation "ГђГ Г±ГЇГҐГ·Г ГІГ ГІГј Г·ГҐГЄ Г®ГЎ ГіГ±ГЇГҐГёГ­Г®Г© Г®ГЇГ«Г ГІГҐ"
 			quid       	"5ADA724802EE"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Распечатать чек об ошибке оплаты"
+		    (object Operation "ГђГ Г±ГЇГҐГ·Г ГІГ ГІГј Г·ГҐГЄ Г®ГЎ Г®ГёГЁГЎГЄГҐ Г®ГЇГ«Г ГІГ»"
 			quid       	"5ADA7267029F"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)))
-	    (object Class "Устройство выдачи наличных (сдача)"
+	    (object Class "Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГўГ»Г¤Г Г·ГЁ Г­Г Г«ГЁГ·Г­Г»Гµ (Г±Г¤Г Г·Г )"
 		quid       	"5ADA729503A9"
 		stereotype 	"boundary"
 		operations 	(list Operations
-		    (object Operation "Выдача сдачи при оплате наличными"
+		    (object Operation "Г‚Г»Г¤Г Г·Г  Г±Г¤Г Г·ГЁ ГЇГ°ГЁ Г®ГЇГ«Г ГІГҐ Г­Г Г«ГЁГ·Г­Г»Г¬ГЁ"
 			quid       	"5ADA72AE0119"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)))
-	    (object Class "Экран терминала"
+	    (object Class "ГќГЄГ°Г Г­ ГІГҐГ°Г¬ГЁГ­Г Г«Г "
 		quid       	"5ADA72E5003E"
 		stereotype 	"boundary"
 		operations 	(list Operations
-		    (object Operation "Показать сумму на оплату"
+		    (object Operation "ГЏГ®ГЄГ Г§Г ГІГј Г±ГіГ¬Г¬Гі Г­Г  Г®ГЇГ«Г ГІГі"
 			quid       	"5ADA730200FA"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Показать вводимый пин-код"
+		    (object Operation "ГЏГ®ГЄГ Г§Г ГІГј ГўГўГ®Г¤ГЁГ¬Г»Г© ГЇГЁГ­-ГЄГ®Г¤"
 			quid       	"5ADA738F0186"
 			parameters 	(list Parameters
-			    (object Parameter "через *"
+			    (object Parameter "Г·ГҐГ°ГҐГ§ *"
 				quid       	"5ADA73AE03D8"))
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Показать информацию об оплате"
+		    (object Operation "ГЏГ®ГЄГ Г§Г ГІГј ГЁГ­ГґГ®Г°Г¬Г Г¶ГЁГѕ Г®ГЎ Г®ГЇГ«Г ГІГҐ"
 			quid       	"5ADA73CA007D"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Обработать карту с помощью технологии NFC"
+		    (object Operation "ГЋГЎГ°Г ГЎГ®ГІГ ГІГј ГЄГ Г°ГІГі Г± ГЇГ®Г¬Г®Г№ГјГѕ ГІГҐГµГ­Г®Г«Г®ГЈГЁГЁ NFC"
 			quid       	"5ADA7CF701E4"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Прочитать пин-код карты"
+		    (object Operation "ГЏГ°Г®Г·ГЁГІГ ГІГј ГЇГЁГ­-ГЄГ®Г¤ ГЄГ Г°ГІГ»"
 			quid       	"5ADA7D090242"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Прочитать идентификатор карты"
+		    (object Operation "ГЏГ°Г®Г·ГЁГІГ ГІГј ГЁГ¤ГҐГ­ГІГЁГґГЁГЄГ ГІГ®Г° ГЄГ Г°ГІГ»"
 			quid       	"5ADA7D1200FA"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)))
-	    (object Class "Заказ топлива"
+	    (object Class "Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ "
 		quid       	"5ADA74BA01D4"
 		stereotype 	"entity"
 		operations 	(list Operations
-		    (object Operation "Создать заказ"
+		    (object Operation "Г‘Г®Г§Г¤Г ГІГј Г§Г ГЄГ Г§"
 			quid       	"5ADA761903B9"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Выбрать вид топлива"
+		    (object Operation "Г‚Г»ГЎГ°Г ГІГј ГўГЁГ¤ ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA78220148"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Выбрать объем топлива"
+		    (object Operation "Г‚Г»ГЎГ°Г ГІГј Г®ГЎГєГҐГ¬ ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA782F01B5"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Выбрать бонусную карту при наличии"
+		    (object Operation "Г‚Г»ГЎГ°Г ГІГј ГЎГ®Г­ГіГ±Г­ГіГѕ ГЄГ Г°ГІГі ГЇГ°ГЁ Г­Г Г«ГЁГ·ГЁГЁ"
 			quid       	"5ADA78390222"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Выбрать способ оплаты"
+		    (object Operation "Г‚Г»ГЎГ°Г ГІГј Г±ГЇГ®Г±Г®ГЎ Г®ГЇГ«Г ГІГ»"
 			quid       	"5ADA78400203"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Оплатить заказ"
+		    (object Operation "ГЋГЇГ«Г ГІГЁГІГј Г§Г ГЄГ Г§"
 			quid       	"5ADA7A9903B9"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0))
 		class_attributes 	(list class_attribute_list
-		    (object ClassAttribute "Идентификатор карты"
+		    (object ClassAttribute "Г€Г¤ГҐГ­ГІГЁГґГЁГЄГ ГІГ®Г° ГЄГ Г°ГІГ»"
 			quid       	"5ADA74E00186"
 			type       	"Integer")
-		    (object ClassAttribute "Значение пин-кода карты"
+		    (object ClassAttribute "Г‡Г­Г Г·ГҐГ­ГЁГҐ ГЇГЁГ­-ГЄГ®Г¤Г  ГЄГ Г°ГІГ»"
 			quid       	"5ADA750901C5"
 			type       	"Integer")
-		    (object ClassAttribute "Введенный пин-код"
+		    (object ClassAttribute "Г‚ГўГҐГ¤ГҐГ­Г­Г»Г© ГЇГЁГ­-ГЄГ®Г¤"
 			quid       	"5ADA752F02CE"
 			type       	"Integer")
-		    (object ClassAttribute "Вид топлива"
+		    (object ClassAttribute "Г‚ГЁГ¤ ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA758E00FA"
 			type       	"String")
-		    (object ClassAttribute "Объем нужного вида топлива"
+		    (object ClassAttribute "ГЋГЎГєГҐГ¬ Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA7593034B"
 			type       	"Double")
-		    (object ClassAttribute "Номер бонусной карты"
+		    (object ClassAttribute "ГЌГ®Г¬ГҐГ° ГЎГ®Г­ГіГ±Г­Г®Г© ГЄГ Г°ГІГ»"
 			quid       	"5ADA7B2C009C"
 			type       	"Integer")
-		    (object ClassAttribute "Способ оплаты"
+		    (object ClassAttribute "Г‘ГЇГ®Г±Г®ГЎ Г®ГЇГ«Г ГІГ»"
 			quid       	"5ADA7B5002EE"
 			type       	"String")))
-	    (object Class "Экран кассы"
+	    (object Class "ГќГЄГ°Г Г­ ГЄГ Г±Г±Г»"
 		quid       	"5ADA76760290"
 		stereotype 	"boundary"
 		operations 	(list Operations
-		    (object Operation "Показать меню опций"
+		    (object Operation "ГЏГ®ГЄГ Г§Г ГІГј Г¬ГҐГ­Гѕ Г®ГЇГ¶ГЁГ©"
 			quid       	"5ADA769500AB"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Показать способ оплаты"
+		    (object Operation "ГЏГ®ГЄГ Г§Г ГІГј Г±ГЇГ®Г±Г®ГЎ Г®ГЇГ«Г ГІГ»"
 			quid       	"5ADA76A90222"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
 			uid        	0)
-		    (object Operation "Показать бонусную карту"
+		    (object Operation "ГЏГ®ГЄГ Г§Г ГІГј ГЎГ®Г­ГіГ±Г­ГіГѕ ГЄГ Г°ГІГі"
 			quid       	"5ADA76B80251"
 			concurrency 	"Sequential"
 			opExportControl 	"Public"
@@ -4036,84 +4036,84 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$33"
 			quid       	"5ADA708C0119"
-			supplier   	"Logical View::Терминал"
+			supplier   	"Logical View::Г’ГҐГ°Г¬ГЁГ­Г Г«"
 			quidu      	"5ADA66530261"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$34"
 			quid       	"5ADA708C0128"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B")))
 	    (object Association "$UNNAMED$35"
 		quid       	"5ADA72C00232"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$36"
 			quid       	"5ADA72C10232"
-			supplier   	"Logical View::Клавиатура терминала"
+			supplier   	"Logical View::ГЉГ«Г ГўГЁГ ГІГіГ°Г  ГІГҐГ°Г¬ГЁГ­Г Г«Г "
 			quidu      	"5ADA7101032C"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$37"
 			quid       	"5ADA72C10234"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B")))
 	    (object Association "$UNNAMED$38"
 		quid       	"5ADA72C4029F"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$39"
 			quid       	"5ADA72C501E4"
-			supplier   	"Logical View::Устройство выдачи наличных (сдача)"
+			supplier   	"Logical View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГўГ»Г¤Г Г·ГЁ Г­Г Г«ГЁГ·Г­Г»Гµ (Г±Г¤Г Г·Г )"
 			quidu      	"5ADA729503A9"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$40"
 			quid       	"5ADA72C501F4"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B")))
 	    (object Association "$UNNAMED$41"
 		quid       	"5ADA72C8031C"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$42"
 			quid       	"5ADA72C902DE"
-			supplier   	"Logical View::Устройство печати чека"
+			supplier   	"Logical View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЇГҐГ·Г ГІГЁ Г·ГҐГЄГ "
 			quidu      	"5ADA72340109"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$43"
 			quid       	"5ADA72C902EE"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B")))
 	    (object Association "$UNNAMED$44"
 		quid       	"5ADA73EA0271"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$45"
 			quid       	"5ADA73EB035B"
-			supplier   	"Logical View::Экран терминала"
+			supplier   	"Logical View::ГќГЄГ°Г Г­ ГІГҐГ°Г¬ГЁГ­Г Г«Г "
 			quidu      	"5ADA72E5003E"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$46"
 			quid       	"5ADA73EB035D"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B")))
 	    (object Association "$UNNAMED$47"
 		quid       	"5ADA771F03D8"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$48"
 			quid       	"5ADA772002FD"
-			supplier   	"Logical View::Заказ топлива"
+			supplier   	"Logical View::Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA74BA01D4"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$49"
 			quid       	"5ADA772002FF"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B")))
 	    (object Association "$UNNAMED$50"
 		quid       	"5ADA774201A5"
 		roles      	(list role_list
 		    (object Role "$UNNAMED$51"
 			quid       	"5ADA774300BB"
-			supplier   	"Logical View::Заказ топлива"
+			supplier   	"Logical View::Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ "
 			quidu      	"5ADA74BA01D4"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$52"
 			quid       	"5ADA774300BD"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B"
 			is_aggregate 	TRUE)))
 	    (object Association "$UNNAMED$53"
@@ -4121,12 +4121,12 @@
 		roles      	(list role_list
 		    (object Role "$UNNAMED$54"
 			quid       	"5ADA781001F4"
-			supplier   	"Logical View::Экран кассы"
+			supplier   	"Logical View::ГќГЄГ°Г Г­ ГЄГ Г±Г±Г»"
 			quidu      	"5ADA76760290"
 			is_navigable 	TRUE)
 		    (object Role "$UNNAMED$55"
 			quid       	"5ADA781001F6"
-			supplier   	"Logical View::Контроллер кассы"
+			supplier   	"Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»"
 			quidu      	"5ADA67A6036B"))))
 	statemachine 	(object State_Machine "State/Activity Model"
 	    quid       	"5ADA5D2900CC"
@@ -4134,37 +4134,37 @@
 		(object State "$UNNAMED$56"
 		    quid       	"5ADA5D3000DB"
 		    type       	"StartState")
-		(object State "Ожидание запуска системы"
+		(object State "ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г§Г ГЇГіГ±ГЄГ  Г±ГЁГ±ГІГҐГ¬Г»"
 		    quid       	"5ADA5D3000E2"
 		    type       	"Normal")
-		(object State "Ожидание выбора нужного вида топлива"
+		(object State "ГЋГ¦ГЁГ¤Г Г­ГЁГҐ ГўГ»ГЎГ®Г°Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA5D3000E9"
 		    type       	"Normal")
-		(object State "Обработка запроса"
+		(object State "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г "
 		    quid       	"5ADA5D300105"
 		    type       	"Normal")
-		(object State "Печать чека"
+		(object State "ГЏГҐГ·Г ГІГј Г·ГҐГЄГ "
 		    quid       	"5ADA5D300118"
 		    type       	"Normal")
 		(object State "$UNNAMED$57"
 		    quid       	"5ADA5D300156"
 		    type       	"EndState")
-		(object State "Обработка запроса на наличие выбранного вида топлива"
+		(object State "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA5D3000F0"
 		    type       	"Normal")
-		(object State "Обработка запроса в приложении"
+		(object State "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Гў ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГЁ"
 		    quid       	"5ADA5D300141"
 		    type       	"Normal")
-		(object State "Проверка на наличие выбранного вида топлива"
+		(object State "ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA566C0196"
 		    type       	"Normal")
-		(object State "Ожидание ответа о наличии выбранного вида топлива"
+		(object State "ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA56B803D8"
 		    type       	"Normal")
-		(object State "Обработка запроса на оформление заказа"
+		(object State "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 		    quid       	"5ADA570F0167"
 		    type       	"Normal")
-		(object State "Обработка запроса на передачу заказа на оформление"
+		(object State "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 		    quid       	"5ADA578B03D8"
 		    type       	"Normal")
 		(object State "$UNNAMED$58"
@@ -4173,10 +4173,10 @@
 		(object State "$UNNAMED$59"
 		    quid       	"5ADA5A2003B9"
 		    type       	"EndState")
-		(object State "Обработка запроса на изменение в БД"
+		(object State "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„"
 		    quid       	"5ADA5C7601D4"
 		    type       	"Normal")
-		(object State "Обработка запроса на верификацию топлива"
+		(object State "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ "
 		    quid       	"5ADA5CFE038A"
 		    type       	"Normal"))
 	    partitions 	(list Partitions)
@@ -4184,7 +4184,7 @@
 	    transitions 	(list transition_list
 		(object State_Transition
 		    quid       	"5ADA5D3000DD"
-		    supplier   	"Logical View::State/Activity Model::Ожидание запуска системы"
+		    supplier   	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г§Г ГЇГіГ±ГЄГ  Г±ГЁГ±ГІГҐГ¬Г»"
 		    supplier_quidu 	"5ADA5D3000E2"
 		    client     	"$UNNAMED$56"
 		    client_quidu 	"5ADA5D3000DB"
@@ -4193,141 +4193,141 @@
 		(object State_Transition
 		    quid       	"5ADA5D3000E4"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Ожидание выбора нужного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ ГўГ»ГЎГ®Г°Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA5D3000E9"
-		    client     	"Logical View::State/Activity Model::Ожидание запуска системы"
+		    client     	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г§Г ГЇГіГ±ГЄГ  Г±ГЁГ±ГІГҐГ¬Г»"
 		    client_quidu 	"5ADA5D3000E2"
-		    Event      	(object Event "Выбор нужного вида топлива"
+		    Event      	(object Event "Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA54F20241")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5D3000E7"))
 		(object State_Transition
 		    quid       	"5ADA5D3000EB"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на наличие выбранного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA5D3000F0"
-		    client     	"Logical View::State/Activity Model::Ожидание выбора нужного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ ГўГ»ГЎГ®Г°Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5D3000E9"
-		    Event      	(object Event "Запрос на наличие выбранного вида топлива"
+		    Event      	(object Event "Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA54F20289")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5D3000EE"))
 		(object State_Transition
 		    quid       	"5ADA56A20167"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Проверка на наличие выбранного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA566C0196"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на наличие выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5D3000F0"
-		    Event      	(object Event "Поиск топлива в БД"
+		    Event      	(object Event "ГЏГ®ГЁГ±ГЄ ГІГ®ГЇГ«ГЁГўГ  Гў ГЃГ„"
 			quid       	"5ADA56A20168")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA56A2016A"))
 		(object State_Transition
 		    quid       	"5ADA56E20119"
-		    supplier   	"Logical View::State/Activity Model::Ожидание ответа о наличии выбранного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA56B803D8"
-		    client     	"Logical View::State/Activity Model::Проверка на наличие выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA566C0196"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA56E2011C"))
 		(object State_Transition
 		    quid       	"5ADA575A0177"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на оформление заказа"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 		    supplier_quidu 	"5ADA570F0167"
-		    client     	"Logical View::State/Activity Model::Ожидание ответа о наличии выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA56B803D8"
-		    Event      	(object Event "Запрос на оформление заказа"
+		    Event      	(object Event "Г‡Г ГЇГ°Г®Г± Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 			quid       	"5ADA575A0178")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA575A017A"))
 		(object State_Transition
 		    quid       	"5ADA590A01A5"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на оформление заказа"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 		    supplier_quidu 	"5ADA570F0167"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на наличие выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5D3000F0"
-		    Event      	(object Event "Оформление заказа"
+		    Event      	(object Event "ГЋГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 			quid       	"5ADA590A01A6")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA590A01A8"))
 		(object State_Transition
 		    quid       	"5ADA59240186"
-		    supplier   	"Logical View::State/Activity Model::Ожидание ответа о наличии выбранного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA56B803D8"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на оформление заказа"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 		    client_quidu 	"5ADA570F0167"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA59240189"))
 		(object State_Transition
 		    quid       	"5ADA592700DA"
-		    supplier   	"Logical View::State/Activity Model::Проверка на наличие выбранного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA566C0196"
-		    client     	"Logical View::State/Activity Model::Ожидание ответа о наличии выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA56B803D8"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA592700DD"))
 		(object State_Transition
 		    quid       	"5ADA592B02BF"
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на передачу заказа на оформление"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 		    supplier_quidu 	"5ADA578B03D8"
-		    client     	"Logical View::State/Activity Model::Проверка на наличие выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA566C0196"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA592B02C2"))
 		(object State_Transition
 		    quid       	"5ADA59F30186"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на наличие выбранного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA5D3000F0"
-		    client     	"Logical View::State/Activity Model::Ожидание выбора нужного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ ГўГ»ГЎГ®Г°Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5D3000E9"
-		    Event      	(object Event "Запрос на наличие выбранного вида топлива"
+		    Event      	(object Event "Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA59F30187")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA59F30189"))
 		(object State_Transition
 		    quid       	"5ADA59FA032C"
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на оформление заказа"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 		    supplier_quidu 	"5ADA570F0167"
-		    client     	"Logical View::State/Activity Model::Проверка на наличие выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA566C0196"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA59FA032F"))
 		(object State_Transition
 		    quid       	"5ADA5A08037A"
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на передачу заказа на оформление"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 		    supplier_quidu 	"5ADA578B03D8"
-		    client     	"Logical View::State/Activity Model::Ожидание ответа о наличии выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA56B803D8"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5A08037D"))
 		(object State_Transition
 		    quid       	"5ADA5A990128"
-		    supplier   	"Logical View::State/Activity Model::Ожидание ответа о наличии выбранного вида топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA56B803D8"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на наличие выбранного вида топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5D3000F0"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5A99012B"))
 		(object State_Transition
 		    quid       	"5ADA5ACA038A"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на передачу заказа на оформление"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 		    supplier_quidu 	"5ADA578B03D8"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на оформление заказа"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 		    client_quidu 	"5ADA570F0167"
-		    Event      	(object Event "Передача заказа на оформление"
+		    Event      	(object Event "ГЏГҐГ°ГҐГ¤Г Г·Г  Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 			quid       	"5ADA5ACA038B")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5ACA038D"))
 		(object State_Transition
 		    quid       	"5ADA5D26035B"
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на передачу заказа на оформление"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 		    supplier_quidu 	"5ADA578B03D8"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на верификацию топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5CFE038A"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5D26035E"))
@@ -4335,29 +4335,29 @@
 		    quid       	"5ADA5D2E000F"
 		    supplier   	"$UNNAMED$59"
 		    supplier_quidu 	"5ADA5A2003B9"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на верификацию топлива"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ "
 		    client_quidu 	"5ADA5CFE038A"
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5D2E0012"))
 		(object State_Transition
 		    quid       	"5ADA5D420399"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на изменение в БД"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„"
 		    supplier_quidu 	"5ADA5C7601D4"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на передачу заказа на оформление"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 		    client_quidu 	"5ADA578B03D8"
-		    Event      	(object Event "Запрос на изменение в БД"
+		    Event      	(object Event "Г‡Г ГЇГ°Г®Г± Г­Г  ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„"
 			quid       	"5ADA5D42039A")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5D42039C"))
 		(object State_Transition
 		    quid       	"5ADA5D8202DE"
 		    label      	""
-		    supplier   	"Logical View::State/Activity Model::Обработка запроса на верификацию топлива"
+		    supplier   	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ "
 		    supplier_quidu 	"5ADA5CFE038A"
-		    client     	"Logical View::State/Activity Model::Обработка запроса на изменение в БД"
+		    client     	"Logical View::State/Activity Model::ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„"
 		    client_quidu 	"5ADA5C7601D4"
-		    Event      	(object Event "Запрос на верификацию топлива"
+		    Event      	(object Event "Г‡Г ГЇГ°Г®Г± Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ "
 			quid       	"5ADA5D8202DF")
 		    sendEvent  	(object sendEvent
 			quid       	"5ADA5D8202E1")))
@@ -4378,7 +4378,7 @@
 			    line_color 	3342489
 			    quidu      	"5ADA5D3000DB"
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Ожидание запуска системы" @175
+			(object StateView "Normal" "ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г§Г ГЇГіГ±ГЄГ  Г±ГЁГ±ГІГҐГ¬Г»" @175
 			    location   	(964, 355)
 			    font       	(object Font
 				size       	10
@@ -4398,7 +4398,7 @@
 				nlines     	2
 				max_width  	458
 				justify    	0
-				label      	"Ожидание запуска системы")
+				label      	"ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г§Г ГЇГіГ±ГЄГ  Г±ГЁГ±ГІГҐГ¬Г»")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4406,7 +4406,7 @@
 			    width      	554
 			    height     	134
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Ожидание выбора нужного вида топлива" @176
+			(object StateView "Normal" "ГЋГ¦ГЁГ¤Г Г­ГЁГҐ ГўГ»ГЎГ®Г°Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @176
 			    location   	(968, 1193)
 			    font       	(object Font
 				size       	10
@@ -4426,7 +4426,7 @@
 				nlines     	2
 				max_width  	430
 				justify    	0
-				label      	"Ожидание выбора нужного вида топлива")
+				label      	"ГЋГ¦ГЁГ¤Г Г­ГЁГҐ ГўГ»ГЎГ®Г°Г  Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4434,7 +4434,7 @@
 			    width      	526
 			    height     	134
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Обработка запроса на наличие выбранного вида топлива" @177
+			(object StateView "Normal" "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @177
 			    location   	(983, 1679)
 			    font       	(object Font
 				size       	10
@@ -4454,7 +4454,7 @@
 				nlines     	2
 				max_width  	590
 				justify    	0
-				label      	"Обработка запроса на наличие выбранного вида топлива")
+				label      	"ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4501,7 +4501,7 @@
 				nlines     	1
 				max_width  	554
 				justify    	0
-				label      	"Выбор нужного вида топлива"
+				label      	"Г‚Г»ГЎГ®Г° Г­ГіГ¦Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 				pctDist    	0.429071
 				height     	14
 				orientation 	1)
@@ -4515,7 +4515,7 @@
 				(967, 1125))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object StateView "Normal" "Проверка на наличие выбранного вида топлива" @181
+			(object StateView "Normal" "ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @181
 			    location   	(982, 2120)
 			    font       	(object Font
 				size       	10
@@ -4535,7 +4535,7 @@
 				nlines     	2
 				max_width  	502
 				justify    	0
-				label      	"Проверка на наличие выбранного вида топлива")
+				label      	"ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4543,7 +4543,7 @@
 			    width      	598
 			    height     	134
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Ожидание ответа о наличии выбранного вида топлива" @182
+			(object StateView "Normal" "ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ " @182
 			    location   	(2041, 2120)
 			    font       	(object Font
 				size       	10
@@ -4563,7 +4563,7 @@
 				nlines     	2
 				max_width  	582
 				justify    	0
-				label      	"Ожидание ответа о наличии выбранного вида топлива")
+				label      	"ГЋГ¦ГЁГ¤Г Г­ГЁГҐ Г®ГІГўГҐГІГ  Г® Г­Г Г«ГЁГ·ГЁГЁ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4571,7 +4571,7 @@
 			    width      	678
 			    height     	134
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Обработка запроса на оформление заказа" @183
+			(object StateView "Normal" "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г " @183
 			    location   	(1972, 1684)
 			    font       	(object Font
 				size       	10
@@ -4591,7 +4591,7 @@
 				nlines     	2
 				max_width  	442
 				justify    	0
-				label      	"Обработка запроса на оформление заказа")
+				label      	"ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4599,7 +4599,7 @@
 			    width      	538
 			    height     	134
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Обработка запроса на передачу заказа на оформление" @184
+			(object StateView "Normal" "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ" @184
 			    location   	(1921, 1221)
 			    font       	(object Font
 				size       	10
@@ -4619,7 +4619,7 @@
 				nlines     	2
 				max_width  	676
 				justify    	0
-				label      	"Обработка запроса на передачу заказа на оформление")
+				label      	"ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЇГҐГ°ГҐГ¤Г Г·Гі Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4661,7 +4661,7 @@
 				nlines     	1
 				max_width  	864
 				justify    	0
-				label      	"Запрос на наличие выбранного вида топлива"
+				label      	"Г‡Г ГЇГ°Г®Г± Г­Г  Г­Г Г«ГЁГ·ГЁГҐ ГўГ»ГЎГ°Г Г­Г­Г®ГЈГ® ГўГЁГ¤Г  ГІГ®ГЇГ«ГЁГўГ "
 				pctDist    	0.512825
 				height     	60
 				orientation 	0)
@@ -4703,7 +4703,7 @@
 				nlines     	1
 				max_width  	643
 				justify    	0
-				label      	"Передача заказа на оформление"
+				label      	"ГЏГҐГ°ГҐГ¤Г Г·Г  Г§Г ГЄГ Г§Г  Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ"
 				pctDist    	0.476624
 				height     	23
 				orientation 	0)
@@ -4745,7 +4745,7 @@
 				nlines     	1
 				max_width  	450
 				justify    	0
-				label      	"Поиск топлива в БД"
+				label      	"ГЏГ®ГЁГ±ГЄ ГІГ®ГЇГ«ГЁГўГ  Гў ГЃГ„"
 				pctDist    	0.500000
 				height     	45
 				orientation 	0)
@@ -4798,7 +4798,7 @@
 				nlines     	1
 				max_width  	568
 				justify    	0
-				label      	"Запрос на оформление заказа"
+				label      	"Г‡Г ГЇГ°Г®Г± Г­Г  Г®ГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ Г§Г ГЄГ Г§Г "
 				pctDist    	0.447405
 				height     	90
 				orientation 	1)
@@ -4812,7 +4812,7 @@
 				(1982, 1750))
 			    line_style 	0
 			    x_offset   	FALSE)
-			(object StateView "Normal" "Обработка запроса на изменение в БД" @195
+			(object StateView "Normal" "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„" @195
 			    location   	(1916, 752)
 			    font       	(object Font
 				size       	10
@@ -4832,7 +4832,7 @@
 				nlines     	2
 				max_width  	396
 				justify    	0
-				label      	"Обработка запроса на изменение в БД")
+				label      	"ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4840,7 +4840,7 @@
 			    width      	492
 			    height     	134
 			    autoResize 	TRUE)
-			(object StateView "Normal" "Обработка запроса на верификацию топлива" @196
+			(object StateView "Normal" "ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ " @196
 			    location   	(1916, 359)
 			    font       	(object Font
 				size       	10
@@ -4860,7 +4860,7 @@
 				nlines     	2
 				max_width  	426
 				justify    	0
-				label      	"Обработка запроса на верификацию топлива")
+				label      	"ГЋГЎГ°Г ГЎГ®ГІГЄГ  Г§Г ГЇГ°Г®Г±Г  Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ ")
 			    icon_style 	"Icon"
 			    line_color 	3342489
 			    fill_color 	13434879
@@ -4907,7 +4907,7 @@
 				nlines     	1
 				max_width  	518
 				justify    	0
-				label      	"Запрос на изменение в БД"
+				label      	"Г‡Г ГЇГ°Г®Г± Г­Г  ГЁГ§Г¬ГҐГ­ГҐГ­ГЁГҐ Гў ГЃГ„"
 				pctDist    	0.467479
 				height     	47
 				orientation 	1)
@@ -4949,7 +4949,7 @@
 				nlines     	1
 				max_width  	614
 				justify    	0
-				label      	"Запрос на верификацию топлива"
+				label      	"Г‡Г ГЇГ°Г®Г± Г­Г  ГўГҐГ°ГЁГґГЁГЄГ Г¶ГЁГѕ ГІГ®ГЇГ«ГЁГўГ "
 				pctDist    	0.500000
 				height     	45
 				orientation 	0)
@@ -4982,7 +4982,7 @@
 		origin_x   	506
 		origin_y   	2075
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Logical View::Клавиатура терминала" @202
+		    (object ClassView "Class" "Logical View::ГЉГ«Г ГўГЁГ ГІГіГ°Г  ГІГҐГ°Г¬ГЁГ­Г Г«Г " @202
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -5004,7 +5004,7 @@
 			    nlines     	2
 			    max_width  	924
 			    justify    	0
-			    label      	"Клавиатура терминала")
+			    label      	"ГЉГ«Г ГўГЁГ ГІГіГ°Г  ГІГҐГ°Г¬ГЁГ­Г Г«Г ")
 			icon       	"boundary"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5032,7 +5032,7 @@
 			height     	154
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Устройство печати чека" @203
+		    (object ClassView "Class" "Logical View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЇГҐГ·Г ГІГЁ Г·ГҐГЄГ " @203
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -5054,7 +5054,7 @@
 			    nlines     	2
 			    max_width  	931
 			    justify    	0
-			    label      	"Устройство печати чека")
+			    label      	"Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЇГҐГ·Г ГІГЁ Г·ГҐГЄГ ")
 			icon       	"boundary"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5082,7 +5082,7 @@
 			height     	154
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Экран терминала" @204
+		    (object ClassView "Class" "Logical View::ГќГЄГ°Г Г­ ГІГҐГ°Г¬ГЁГ­Г Г«Г " @204
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -5104,7 +5104,7 @@
 			    nlines     	2
 			    max_width  	945
 			    justify    	0
-			    label      	"Экран терминала")
+			    label      	"ГќГЄГ°Г Г­ ГІГҐГ°Г¬ГЁГ­Г Г«Г ")
 			icon       	"boundary"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5132,7 +5132,7 @@
 			height     	154
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Заказ топлива" @205
+		    (object ClassView "Class" "Logical View::Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ " @205
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -5154,7 +5154,7 @@
 			    nlines     	2
 			    max_width  	430
 			    justify    	0
-			    label      	"Заказ топлива")
+			    label      	"Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ ")
 			icon       	"entity"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5181,7 +5181,7 @@
 			height     	154
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Экран кассы" @206
+		    (object ClassView "Class" "Logical View::ГќГЄГ°Г Г­ ГЄГ Г±Г±Г»" @206
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -5203,7 +5203,7 @@
 			    nlines     	2
 			    max_width  	953
 			    justify    	0
-			    label      	"Экран кассы")
+			    label      	"ГќГЄГ°Г Г­ ГЄГ Г±Г±Г»")
 			icon       	"boundary"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5231,7 +5231,7 @@
 			height     	154
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::Контроллер кассы" @207
+		    (object ClassView "Class" "Logical View::ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»" @207
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -5253,7 +5253,7 @@
 			    nlines     	2
 			    max_width  	438
 			    justify    	0
-			    label      	"Контроллер кассы")
+			    label      	"ГЉГ®Г­ГІГ°Г®Г«Г«ГҐГ° ГЄГ Г±Г±Г»")
 			icon       	"control"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5476,7 +5476,7 @@
 			supplier_is_spec 	TRUE)
 		    (object Module_Visibility_Relationship
 			quid       	"5ADA603801C8"
-			supplier   	"Component View::Устройство кассы"
+			supplier   	"Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»"
 			quidu      	"5ADA603801CE"
 			supplier_is_spec 	TRUE))
 		language   	"")
@@ -5490,47 +5490,47 @@
 			quidu      	"5ADA603801C6"
 			supplier_is_spec 	TRUE))
 		language   	"")
-	    (object module "Поставщик топлива" "TaskType" "Body"
+	    (object module "ГЏГ®Г±ГІГ ГўГ№ГЁГЄ ГІГ®ГЇГ«ГЁГўГ " "TaskType" "Body"
 		quid       	"5ADA603801D1"
 		stereotype 	"Task Body"
 		visible_modules 	(list dependency_list
 		    (object Module_Visibility_Relationship
 			quid       	"5ADA603801D0"
-			supplier   	"Component View::Устройство кассы"
+			supplier   	"Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»"
 			quidu      	"5ADA603801CE"
 			supplier_is_spec 	TRUE))
 		language   	"")
-	    (object module "Экран кассы" "TaskType" "Body"
+	    (object module "ГќГЄГ°Г Г­ ГЄГ Г±Г±Г»" "TaskType" "Body"
 		quid       	"5ADA603801D5"
 		stereotype 	"Task Body"
 		visible_modules 	(list dependency_list
 		    (object Module_Visibility_Relationship
 			quid       	"5ADA603801D4"
-			supplier   	"Component View::Устройство кассы"
+			supplier   	"Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»"
 			quidu      	"5ADA603801CE"
 			supplier_is_spec 	TRUE))
 		language   	"")
-	    (object module "Клавиатура терминала" "TaskType" "Body"
+	    (object module "ГЉГ«Г ГўГЁГ ГІГіГ°Г  ГІГҐГ°Г¬ГЁГ­Г Г«Г " "TaskType" "Body"
 		quid       	"5ADA603801D9"
 		stereotype 	"Task Body"
 		visible_modules 	(list dependency_list
 		    (object Module_Visibility_Relationship
 			quid       	"5ADA603801D8"
-			supplier   	"Component View::Устройство кассы"
+			supplier   	"Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»"
 			quidu      	"5ADA603801CE"
 			supplier_is_spec 	TRUE))
 		language   	"")
-	    (object module "Устройство кассы" "TaskType" "Specification"
+	    (object module "Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»" "TaskType" "Specification"
 		quid       	"5ADA603801CE"
 		stereotype 	"Task Specification"
 		language   	"")
-	    (object module "Устройство печати чека" "TaskType" "Body"
+	    (object module "Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЇГҐГ·Г ГІГЁ Г·ГҐГЄГ " "TaskType" "Body"
 		quid       	"5ADA603801DD"
 		stereotype 	"Task Body"
 		visible_modules 	(list dependency_list
 		    (object Module_Visibility_Relationship
 			quid       	"5ADA603801DC"
-			supplier   	"Component View::Устройство кассы"
+			supplier   	"Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»"
 			quidu      	"5ADA603801CE"
 			supplier_is_spec 	TRUE))
 		language   	"")
@@ -5540,7 +5540,7 @@
 		visible_modules 	(list dependency_list
 		    (object Module_Visibility_Relationship
 			quid       	"5ADA61CF008D"
-			supplier   	"Component View::Устройство кассы"
+			supplier   	"Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»"
 			quidu      	"5ADA603801CE"
 			supplier_is_spec 	TRUE)
 		    (object Module_Visibility_Relationship
@@ -5549,17 +5549,17 @@
 			quidu      	"5ADA603801CB"
 			supplier_is_spec 	TRUE))
 		language   	"")
-	    (object module "Экран терминала" "TaskType" "Body"
+	    (object module "ГќГЄГ°Г Г­ ГІГҐГ°Г¬ГЁГ­Г Г«Г " "TaskType" "Body"
 		quid       	"5ADA62B001D5"
 		stereotype 	"Task Body"
 		visible_modules 	(list dependency_list
 		    (object Module_Visibility_Relationship
 			quid       	"5ADA62B802C0"
-			supplier   	"Component View::Устройство кассы"
+			supplier   	"Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»"
 			quidu      	"5ADA603801CE"
 			supplier_is_spec 	TRUE))
 		language   	"")
-	    (object module "БД Топлива" "NotAModuleType" "NotAModulePart"
+	    (object module "ГЃГ„ Г’Г®ГЇГ«ГЁГўГ " "NotAModuleType" "NotAModulePart"
 		quid       	"5ADA67680290"
 		stereotype 	"Database"
 		visible_modules 	(list dependency_list
@@ -5625,7 +5625,7 @@
 			    nlines     	5
 			    max_width  	465
 			    justify    	1
-			    label      	"Реализует класс: Заказ топлива")
+			    label      	"ГђГҐГ Г«ГЁГ§ГіГҐГІ ГЄГ«Г Г±Г±: Г‡Г ГЄГ Г§ ГІГ®ГЇГ«ГЁГўГ ")
 			line_color 	3342489
 			fill_color 	13434879
 			width      	525
@@ -5688,7 +5688,7 @@
 			autoResize 	TRUE
 			width      	210
 			height     	312)
-		    (object ModView "Component View::Экран кассы" "TaskType" "Body" @226
+		    (object ModView "Component View::ГќГЄГ°Г Г­ ГЄГ Г±Г±Г»" "TaskType" "Body" @226
 			location   	(912, 1805)
 			font       	(object Font
 			    size       	10
@@ -5707,7 +5707,7 @@
 			    nlines     	1
 			    max_width  	578
 			    justify    	1
-			    label      	"Экран кассы")
+			    label      	"ГќГЄГ°Г Г­ ГЄГ Г±Г±Г»")
 			icon       	"Task Body"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5716,7 +5716,7 @@
 			autoResize 	TRUE
 			width      	282
 			height     	156)
-		    (object ModView "Component View::Клавиатура терминала" "TaskType" "Body" @227
+		    (object ModView "Component View::ГЉГ«Г ГўГЁГ ГІГіГ°Г  ГІГҐГ°Г¬ГЁГ­Г Г«Г " "TaskType" "Body" @227
 			location   	(1796, 1901)
 			font       	(object Font
 			    size       	10
@@ -5735,7 +5735,7 @@
 			    nlines     	1
 			    max_width  	582
 			    justify    	1
-			    label      	"Клавиатура терминала")
+			    label      	"ГЉГ«Г ГўГЁГ ГІГіГ°Г  ГІГҐГ°Г¬ГЁГ­Г Г«Г ")
 			icon       	"Task Body"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5744,7 +5744,7 @@
 			autoResize 	TRUE
 			width      	282
 			height     	156)
-		    (object ModView "Component View::Устройство кассы" "TaskType" "Specification" @228
+		    (object ModView "Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»" "TaskType" "Specification" @228
 			location   	(1559, 1350)
 			font       	(object Font
 			    size       	10
@@ -5763,7 +5763,7 @@
 			    nlines     	1
 			    max_width  	553
 			    justify    	1
-			    label      	"Устройство кассы")
+			    label      	"Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЄГ Г±Г±Г»")
 			icon       	"Task Specification"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5772,7 +5772,7 @@
 			autoResize 	TRUE
 			width      	282
 			height     	156)
-		    (object ModView "Component View::Устройство печати чека" "TaskType" "Body" @229
+		    (object ModView "Component View::Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЇГҐГ·Г ГІГЁ Г·ГҐГЄГ " "TaskType" "Body" @229
 			location   	(2408, 1890)
 			font       	(object Font
 			    size       	10
@@ -5791,7 +5791,7 @@
 			    nlines     	1
 			    max_width  	567
 			    justify    	1
-			    label      	"Устройство печати чека")
+			    label      	"Г“Г±ГІГ°Г®Г©Г±ГІГўГ® ГЇГҐГ·Г ГІГЁ Г·ГҐГЄГ ")
 			icon       	"Task Body"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5839,7 +5839,7 @@
 			    (1012, 1728)
 			    (1447, 1425))
 			line_style 	0)
-		    (object ModView "Component View::Экран терминала" "TaskType" "Body" @234
+		    (object ModView "Component View::ГќГЄГ°Г Г­ ГІГҐГ°Г¬ГЁГ­Г Г«Г " "TaskType" "Body" @234
 			location   	(1266, 1859)
 			font       	(object Font
 			    size       	10
@@ -5858,7 +5858,7 @@
 			    nlines     	1
 			    max_width  	578
 			    justify    	1
-			    label      	"Экран терминала")
+			    label      	"ГќГЄГ°Г Г­ ГІГҐГ°Г¬ГЁГ­Г Г«Г ")
 			icon       	"Task Body"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5877,7 +5877,7 @@
 			    (1346, 1715)
 			    (1512, 1425))
 			line_style 	0)
-		    (object ModView "Component View::БД Топлива" "NotAModuleType" "NotAModulePart" @236
+		    (object ModView "Component View::ГЃГ„ Г’Г®ГЇГ«ГЁГўГ " "NotAModuleType" "NotAModulePart" @236
 			location   	(2234, 401)
 			font       	(object Font
 			    size       	10
@@ -5896,7 +5896,7 @@
 			    nlines     	2
 			    max_width  	431
 			    justify    	0
-			    label      	"БД Топлива")
+			    label      	"ГЃГ„ Г’Г®ГЇГ«ГЁГўГ ")
 			icon       	"Database"
 			icon_style 	"Icon"
 			line_color 	3342489
@@ -5942,70 +5942,70 @@
     process_structure 	(object Processes
 	quid       	"5ADA54D0036F"
 	ProcsNDevs 	(list
-	    (object Processor "Клиент"
+	    (object Processor "ГЉГ«ГЁГҐГ­ГІ"
 		quid       	"5ADA60A301D5"
 		connections 	(list connection_list
 		    (object Connection_Relationship
 			quid       	"5ADA60A301D6"
-			supplier   	"Сеть-интернет"
+			supplier   	"Г‘ГҐГІГј-ГЁГ­ГІГҐГ°Г­ГҐГІ"
 			quidu      	"5ADA60A301D9"
 			supplier_is_device 	TRUE))
 		characteristics 	""
 		scheduling 	"Preemptive"
 		processes  	(list processes))
-	    (object Processor "Сервер"
+	    (object Processor "Г‘ГҐГ°ГўГҐГ°"
 		quid       	"5ADA60A301DD"
 		connections 	(list connection_list
 		    (object Connection_Relationship
 			quid       	"5ADA60A301DE"
-			supplier   	"Локальная сеть"
+			supplier   	"Г‹Г®ГЄГ Г«ГјГ­Г Гї Г±ГҐГІГј"
 			quidu      	"5ADA60A301E1"
 			supplier_is_device 	TRUE))
 		characteristics 	""
 		scheduling 	"Preemptive"
 		processes  	(list processes))
-	    (object Processor "Касса"
+	    (object Processor "ГЉГ Г±Г±Г "
 		quid       	"5ADA60A301E8"
 		connections 	(list connection_list
 		    (object Connection_Relationship
 			quid       	"5ADA60A301E7"
-			supplier   	"Локальная сеть"
+			supplier   	"Г‹Г®ГЄГ Г«ГјГ­Г Гї Г±ГҐГІГј"
 			quidu      	"5ADA60A301E1"
 			supplier_is_device 	TRUE))
 		characteristics 	""
 		scheduling 	"Preemptive"
 		processes  	(list processes))
-	    (object Processor "Бензоколонка"
+	    (object Processor "ГЃГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГ "
 		quid       	"5ADA60A301E4"
 		connections 	(list connection_list
 		    (object Connection_Relationship
 			quid       	"5ADA60A301E3"
-			supplier   	"Локальная сеть"
+			supplier   	"Г‹Г®ГЄГ Г«ГјГ­Г Гї Г±ГҐГІГј"
 			quidu      	"5ADA60A301E1"
 			supplier_is_device 	TRUE))
 		characteristics 	""
 		scheduling 	"Preemptive"
 		processes  	(list processes))
-	    (object Device "Сеть-интернет"
+	    (object Device "Г‘ГҐГІГј-ГЁГ­ГІГҐГ°Г­ГҐГІ"
 		quid       	"5ADA60A301D9"
 		connections 	(list connection_list
 		    (object Connection_Relationship
 			quid       	"5ADA60A301DA"
-			supplier   	"Сервер"
+			supplier   	"Г‘ГҐГ°ГўГҐГ°"
 			quidu      	"5ADA60A301DD"
 			supplier_is_device 	FALSE))
 		characteristics 	"")
-	    (object Device "Локальная сеть"
+	    (object Device "Г‹Г®ГЄГ Г«ГјГ­Г Гї Г±ГҐГІГј"
 		quid       	"5ADA60A301E1"
 		connections 	(list connection_list
 		    (object Connection_Relationship
 			quid       	"5ADA634700FA"
-			supplier   	"Бензоколонка"
+			supplier   	"ГЃГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГ "
 			quidu      	"5ADA60A301E4"
 			supplier_is_device 	FALSE)
 		    (object Connection_Relationship
 			quid       	"5ADA634A009C"
-			supplier   	"Касса"
+			supplier   	"ГЉГ Г±Г±Г "
 			quidu      	"5ADA60A301E8"
 			supplier_is_device 	FALSE))
 		characteristics 	"")
@@ -6021,7 +6021,7 @@
 		origin_x   	0
 		origin_y   	463
 		items      	(list diagram_item_list
-		    (object ProcessorView "Клиент" @240
+		    (object ProcessorView "ГЉГ«ГЁГҐГ­ГІ" @240
 			location   	(513, 631)
 			font       	(object Font
 			    size       	10
@@ -6039,14 +6039,14 @@
 			    nlines     	2
 			    max_width  	319
 			    justify    	0
-			    label      	"Клиент")
+			    label      	"ГЉГ«ГЁГҐГ­ГІ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			quidu      	"5ADA60A301D5"
 			width      	394
 			height     	319
 			annotation 	0)
-		    (object DeviceView "Сеть-интернет" @241
+		    (object DeviceView "Г‘ГҐГІГј-ГЁГ­ГІГҐГ°Г­ГҐГІ" @241
 			location   	(792, 1533)
 			font       	(object Font
 			    size       	10
@@ -6064,14 +6064,14 @@
 			    nlines     	2
 			    max_width  	438
 			    justify    	0
-			    label      	"Сеть-интернет")
+			    label      	"Г‘ГҐГІГј-ГЁГ­ГІГҐГ°Г­ГҐГІ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			quidu      	"5ADA60A301D9"
 			width      	513
 			height     	407
 			annotation 	0)
-		    (object ProcessorView "Сервер" @242
+		    (object ProcessorView "Г‘ГҐГ°ГўГҐГ°" @242
 			location   	(1809, 650)
 			font       	(object Font
 			    size       	10
@@ -6089,14 +6089,14 @@
 			    nlines     	2
 			    max_width  	275
 			    justify    	0
-			    label      	"Сервер")
+			    label      	"Г‘ГҐГ°ГўГҐГ°")
 			icon_style 	"Icon"
 			line_color 	3342489
 			quidu      	"5ADA60A301DD"
 			width      	350
 			height     	282
 			annotation 	0)
-		    (object DeviceView "Локальная сеть" @243
+		    (object DeviceView "Г‹Г®ГЄГ Г«ГјГ­Г Гї Г±ГҐГІГј" @243
 			location   	(1742, 1727)
 			font       	(object Font
 			    size       	10
@@ -6114,14 +6114,14 @@
 			    nlines     	2
 			    max_width  	319
 			    justify    	0
-			    label      	"Локальная сеть")
+			    label      	"Г‹Г®ГЄГ Г«ГјГ­Г Гї Г±ГҐГІГј")
 			icon_style 	"Icon"
 			line_color 	3342489
 			quidu      	"5ADA60A301E1"
 			width      	394
 			height     	319
 			annotation 	0)
-		    (object ProcessorView "Касса" @244
+		    (object ProcessorView "ГЉГ Г±Г±Г " @244
 			location   	(3045, 1678)
 			font       	(object Font
 			    size       	10
@@ -6139,14 +6139,14 @@
 			    nlines     	2
 			    max_width  	250
 			    justify    	0
-			    label      	"Касса")
+			    label      	"ГЉГ Г±Г±Г ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			quidu      	"5ADA60A301E8"
 			width      	325
 			height     	262
 			annotation 	0)
-		    (object ProcessorView "Бензоколонка" @245
+		    (object ProcessorView "ГЃГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГ " @245
 			location   	(2780, 903)
 			font       	(object Font
 			    size       	10
@@ -6164,7 +6164,7 @@
 			    nlines     	2
 			    max_width  	282
 			    justify    	0
-			    label      	"Бензоколонка")
+			    label      	"ГЃГҐГ­Г§Г®ГЄГ®Г«Г®Г­ГЄГ ")
 			icon_style 	"Icon"
 			line_color 	3342489
 			quidu      	"5ADA60A301E4"
